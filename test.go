@@ -52,5 +52,13 @@ func main() {
 	m.Fill(matrix.ColorWhite())
 	m.Send()
 	time.Sleep(500 * time.Millisecond)
+
+	m.InitFlame()
+	for i := 0; i < 1000; i++ {
+		m.FlameFill()
+		m.Send()
+		time.Sleep(50 * time.Millisecond)
+	}
+
 	m.Close()
 }
