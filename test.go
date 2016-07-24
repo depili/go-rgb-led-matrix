@@ -57,7 +57,7 @@ func main() {
 	for i := 0; i < 1000; i++ {
 		m.FlameFill()
 		m.Send()
-		time.Sleep(50 * time.Millisecond)
+		time.Sleep(10 * time.Millisecond)
 	}
 
 	m.Close()
