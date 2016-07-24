@@ -1,7 +1,6 @@
 package matrix
 
 import (
-	"fmt"
 	zmq "github.com/pebbe/zmq4"
 	"time"
 )
@@ -52,7 +51,6 @@ func (matrix *matrix) Send() {
 			data = append(data, b[0], b[1], b[2])
 		}
 	}
-	fmt.Printf("Sending %d bytes\n", len(data))
 	if _, err := matrix.socket.SendMessage(data, nil); err != nil {
 		panic(err)
 	}
