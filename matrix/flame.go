@@ -1,7 +1,6 @@
 package matrix
 
 import (
-	"fmt"
 	"github.com/husl-colors/husl-go"
 	"math/rand"
 )
@@ -24,7 +23,6 @@ func (matrix *matrix) InitFlame() {
 		color[1] = byte(g * 255.0)
 		color[2] = byte(b * 255.0)
 		matrix.flame_palette[i] = color
-		fmt.Printf("Color %d R:%d G:%d B:%d\n", i, color[0], color[1], color[2])
 	}
 }
 
