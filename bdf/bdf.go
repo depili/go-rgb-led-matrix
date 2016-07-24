@@ -14,7 +14,7 @@ type Bdf struct {
 	Height   int
 	Baseline int
 	X_offset int
-	Glyphs   map[int]Glyph
+	glyphs   map[rune]Glyph
 }
 
 type Glyph struct {
@@ -31,7 +31,7 @@ func Parse(filename string) (*Bdf, error) {
 		Height:   0,
 		Baseline: 0,
 		X_offset: 0,
-		Glyphs:   make(map[int]Glyph),
+		glyphs:   make(map[rune]Glyph),
 	}
 
 	if file, err := os.Open(filename); err == nil {
@@ -50,9 +50,9 @@ func Parse(filename string) (*Bdf, error) {
 				// Parsed
 			} else if strings.Contains(s, "STARTCHAR") {
 				codepoint, glyph, _ := parseGlyph(r)
-				font.Glyphs[codepoint] = *glyph
+				font.glyphs[rune(codepoint)] = *glyph
 			}
-			if font.Chars == len(font.Glyphs) {
+			if font.Chars == len(font.glyphs) {
 				return &font, nil
 			}
 		}
@@ -107,6 +107,33 @@ func parseGlyph(r *bufio.Reader) (int, *Glyph, error) {
 			}
 		}
 	}
+}
+
+func (font *Bdf) TextBitmap(text string) [][]bool {
+	bitmap := make([][]bool, font.Height)
+	for _, c := range text {
+		glyph := font.GetGlyph(c)
+		for r, row := range glyph.Bitmap {
+			bitmap[r] = append(bitmap[r], row...)
+		}
+	}
+	return bitmap
+}
+
+func (font *Bdf) TextLength(text string) int {
+	length := 0
+	for _, c := range text {
+		length += font.GetGlyph(c).Width
+	}
+	return length
+}
+
+func (font *Bdf) GetGlyph(c rune) Glyph {
+	glyph, ok := font.glyphs[c]
+	if !ok {
+		return font.glyphs[rune(0)]
+	}
+	return glyph
 }
 
 func hasBit(n int, pos uint) bool {
