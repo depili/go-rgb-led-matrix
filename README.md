@@ -1,0 +1,2 @@
+# go-rgb-led-matrix #
+This is my first proper golang project. It is for communicating with my 32x128 pixel rgb led matrix over zeromq. A raspberry pi3 uses the wonderful https://github.com/hzeller/rpi-rgb-led-matrix library for driving some cheap chinease "hub75" modules.
