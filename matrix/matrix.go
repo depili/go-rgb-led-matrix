@@ -7,13 +7,20 @@ import (
 )
 
 type matrix struct {
-	socket  *zmq.Socket
-	context *zmq.Context
-	bitmap  [][][3]byte
+	socket        *zmq.Socket
+	context       *zmq.Context
+	bitmap        [][][3]byte
+	flame_buffer  [][]byte
+	flame_palette [][3]byte
+	rows          int
+	columns       int
 }
 
 func Init(host string, rows int, columns int) *matrix {
-	var matrix matrix
+	var matrix = matrix{
+		rows:    rows,
+		columns: columns,
+	}
 	context, err := zmq.NewContext()
 	if err != nil {
 		panic(err)
