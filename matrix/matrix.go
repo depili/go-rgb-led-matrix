@@ -51,7 +51,7 @@ func (matrix *matrix) Send() {
 			data = append(data, b[0], b[1], b[2])
 		}
 	}
-	if _, err := matrix.socket.SendMessage(data, nil); err != nil {
+	if _, err := matrix.socket.SendBytes(data, 0); err != nil {
 		panic(err)
 	}
 }
