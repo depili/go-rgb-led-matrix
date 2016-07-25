@@ -2,8 +2,8 @@ package matrix
 
 import ()
 
-func (matrix *matrix) DrawBitmap(bitmap [][]bool, color [3]byte, r int, c int) {
-	for y, row := range bitmap {
+func (matrix *matrix) DrawBitmask(bitmask [][]bool, color [3]byte, r int, c int) {
+	for y, row := range bitmask {
 		for x, b := range row {
 			if b {
 				matrix.SetPixel(r+y, c+x, color)
@@ -12,9 +12,9 @@ func (matrix *matrix) DrawBitmap(bitmap [][]bool, color [3]byte, r int, c int) {
 	}
 }
 
-func (matrix *matrix) ColorBitmap(bits [][]bool, color [3]byte) [][][3]byte {
-	bitmap := make([][][3]byte, len(bits))
-	for r, row := range bits {
+func (matrix *matrix) ColorBitmap(bitmask [][]bool, color [3]byte) [][][3]byte {
+	bitmap := make([][][3]byte, len(bitmask))
+	for r, row := range bitmask {
 		bitmap[r] = make([][3]byte, len(row))
 		for c, b := range row {
 			if b {
@@ -27,9 +27,9 @@ func (matrix *matrix) ColorBitmap(bits [][]bool, color [3]byte) [][][3]byte {
 	return bitmap
 }
 
-func (matrix *matrix) OffsetBitmap(bitmap [][]bool, offset int, length int) [][]bool {
-	ret := make([][]bool, len(bitmap))
-	for r, row := range bitmap {
+func (matrix *matrix) OffsetBitmask(bitmask [][]bool, offset int, length int) [][]bool {
+	ret := make([][]bool, len(bitmask))
+	for r, row := range bitmask {
 		end := offset + length
 		if end > len(row) {
 			end = len(row)
