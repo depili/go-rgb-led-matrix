@@ -12,6 +12,24 @@ func (matrix *matrix) DrawBitmask(bitmask [][]bool, color [3]byte, r int, c int)
 	}
 }
 
+func (matrix *matrix) DrawBitmapMask(bitmap [][][3]byte, bitmask [][]bool, y int, x int) {
+	for r, row := range bitmap {
+		for c, color := range row {
+			if bitmask[r][c] {
+				matrix.SetPixel(r+y, c+c, color)
+			}
+		}
+	}
+}
+
+func (matrix *matrix) DrawBitmap(bitmap [][][3]byte, y, x int) {
+	for r, row := range bitmap {
+		for c, color := range row {
+			matrix.SetPixel(r+y, c+x, color)
+		}
+	}
+}
+
 func (matrix *matrix) ColorBitmap(bitmask [][]bool, color [3]byte) [][][3]byte {
 	bitmap := make([][][3]byte, len(bitmask))
 	for r, row := range bitmask {
