@@ -54,6 +54,12 @@ func main() {
 	m.Send()
 	time.Sleep(500 * time.Millisecond)
 
+	for i := 0; i < 1000; i++ {
+		m.PlasmaFill(i)
+		m.Send()
+		time.Sleep(10 * time.Millisecond)
+	}
+
 	scroll := "Jotain tässä scrollaa   "
 	bitmap = font.TextBitmap(scroll)
 	for i := 0; i < 1000; i++ {
