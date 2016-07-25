@@ -18,7 +18,7 @@ func (matrix *matrix) InitFlame() {
 		if l > 50 {
 			l = 50
 		}
-		r, g, b := husl.HuslToRGB(float64(i)/4.0, 100, l)
+		r, g, b := husl.HuslToRGB(float64(i)/2.0, 100, l)
 		color[0] = byte(r * 255.0)
 		color[1] = byte(g * 255.0)
 		color[2] = byte(b * 255.0)
