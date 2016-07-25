@@ -64,7 +64,7 @@ func main() {
 	bitmap = font.TextBitmap(scroll)
 	for i := 0; i < 1000; i++ {
 		m.Fill(matrix.ColorBlack())
-		m.Scroll(bitmap, matrix.ColorWhite(), 5, 15, i, 80)
+		m.ScrollPlasma(bitmap, 5, 15, i, 80)
 		m.Send()
 		time.Sleep(10 * time.Millisecond)
 	}
