@@ -40,6 +40,7 @@ func main() {
 	}
 
 	m := matrix.Init("tcp://192.168.0.30:5555", 32, 128)
+	defer m.Close()
 	var color [3]byte
 	color[0] = 0
 	color[1] = 255
@@ -53,12 +54,19 @@ func main() {
 	m.Send()
 	time.Sleep(500 * time.Millisecond)
 
+	scroll := "Jotain tässä scrollaa   "
+	bitmap = font.TextBitmap(scroll)
+	for i := 0; i < 1000; i++ {
+		m.Fill(matrix.ColorBlack())
+		m.Scroll(bitmap, matrix.ColorWhite(), 5, 15, i, 80)
+		m.Send()
+		time.Sleep(10 * time.Millisecond)
+	}
+
 	m.InitFlame()
 	for i := 0; i < 1000; i++ {
 		m.FlameFill()
 		m.Send()
 		time.Sleep(10 * time.Millisecond)
 	}
-
-	m.Close()
 }
