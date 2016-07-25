@@ -6,13 +6,14 @@ import (
 )
 
 type matrix struct {
-	socket        *zmq.Socket
-	context       *zmq.Context
-	bitmap        [][][3]byte
-	flame_buffer  [][]byte
-	flame_palette [][3]byte
-	rows          int
-	columns       int
+	socket         *zmq.Socket
+	context        *zmq.Context
+	bitmap         [][][3]byte
+	flame_buffer   [][]byte
+	flame_palette  [][3]byte
+	rows           int
+	columns        int
+	plasma_palette [][3]byte
 }
 
 func Init(host string, rows int, columns int) *matrix {
