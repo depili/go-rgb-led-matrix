@@ -71,6 +71,14 @@ func (matrix *matrix) Close() {
 	matrix.context.Term()
 }
 
+func (matrix *matrix) SetPixel(r int, c int, color [3]byte) {
+	if r >= matrix.rows || c >= matrix.columns || r < 0 || c < 0 {
+		// Pixel out of matrix area
+		return
+	}
+	matrix.bitmap[r][c] = color
+}
+
 func ColorBlack() [3]byte {
 	return [3]byte{0, 0, 0}
 }
