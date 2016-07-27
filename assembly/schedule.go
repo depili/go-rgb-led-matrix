@@ -2,6 +2,7 @@ package assembly
 
 import (
 	"encoding/json"
+	"fmt"
 	"time"
 )
 
@@ -45,7 +46,7 @@ func ParseSchedule(data []byte) *schedule {
 func (sched *schedule) NextEvent(t time.Time, flag string) event {
 	var ret event
 	for _, ev := range sched.Events {
-		if ev.HasFlag(flag) {
+		if ev.HasFlag(flag) && ev.Start_time.After(t) {
 			ret = ev
 			break
 		}
@@ -72,4 +73,21 @@ func (ev *event) HasFlag(flag string) bool {
 		}
 	}
 	return false
+}
+
+func (ev *event) String() string {
+	return fmt.Sprintf("Event: \t%s\n\tStarts: %s\n\tEnds: %s\n\tDuration: %s\n",
+		ev.Name, ev.Start_time.String(), ev.End_time.String(),
+		ev.End_time.Sub(ev.Start_time.Time).String())
+}
+
+func (ev *event) TimeToGo(t time.Time) (string, bool) {
+	ttg := ev.Start_time.Sub(t)
+	if ev.Start_time.After(t) {
+		return fmt.Sprintf("T-%2.f:%02d:%02d",
+			ttg.Hours(), int(ttg.Minutes())%60, int(ttg.Seconds())%60), false
+	} else {
+		return fmt.Sprintf("T+%02.f:%02d:%02d",
+			-ttg.Hours(), -int(ttg.Minutes())%60, -int(ttg.Seconds())%60), true
+	}
 }
