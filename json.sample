@@ -1,0 +1,2306 @@
+{
+  "locations": {
+    "sportfield": {
+      "name_fi": "Urheilukenttä Messukeskuksen vieressä",
+      "url": "http://www.assembly.org/summer16/program/sports",
+      "name": "Sport field outside Messukeskus"
+    },
+    "pms": {
+      "name_fi": "PMS",
+      "url": "http://pms.assembly.org",
+      "name": "PMS"
+    },
+    "party_area_loading": {
+      "name_fi": "Tapahtuma-alue; lastaussisäänkäynnillä",
+      "url": "http://www.assembly.org/summer16/manual/",
+      "name": "Main party area; at the loading entrance"
+    },
+    "party_area": {
+      "name_fi": "Tapahtuma-alue",
+      "url": "http://www.assembly.org/summer16/manual/",
+      "name": "Main party area"
+    },
+    "all_entrances": {
+      "name_fi": "All entrances",
+      "url": "http://www.assembly.org/summer16/manual/maps/",
+      "name": "All entrances"
+    },
+    "seminar": {
+      "name_fi": "Seminaarialue",
+      "url": "http://www.assembly.org/summer16/program/arttech-seminar/",
+      "name": "Seminar area"
+    },
+    "web": {
+      "name_fi": "Website",
+      "url": "http://www.assembly.org/summer16/",
+      "name": "Website"
+    },
+    "loading": {
+      "name_fi": "Lastaussisäänkäynti",
+      "url": "http://www.assembly.org/summer16/manual/",
+      "name": "Loading entrance"
+    },
+    "console": {
+      "name_fi": "eSports; konsolialue",
+      "url": "http://www.assembly.org/summer16/manual/",
+      "name": "eSports; Console area"
+    },
+    "own_place": {
+      "name_fi": "Oma tietokonepaikka",
+      "url": "http://www.assembly.org/summer16/manual/",
+      "name": "Own computer place"
+    },
+    "machine_dance": {
+      "name_fi": "Tanssipelaajien osasto",
+      "url": "http://www.assembly.org/summer16/manual/",
+      "name": "Tanssipelaajat booth"
+    },
+    "activityarea": {
+      "name_fi": "Aktiviteettialue",
+      "url": "http://www.assembly.org/summer16/manual/",
+      "name": "Activity area"
+    },
+    "powerplay": {
+      "name_fi": "Powerplay",
+      "url": "http://www.assembly.org/summer16/manual/",
+      "name": "Powerplay"
+    },
+    "all_areas": {
+      "name_fi": "Kaikki alueet",
+      "url": "http://www.assembly.org/summer16/manual/maps/",
+      "name": "All Areas"
+    },
+    "dota2": {
+      "name_fi": "eSports; DOTA2 -alue",
+      "url": "http://www.assembly.org/summer16/manual/",
+      "name": "eSports; DOTA2 area"
+    },
+    "gamehall": {
+      "name_fi": "Pelihalli",
+      "url": "http://www.assembly.org/summer16/manual/",
+      "name": "Game hall"
+    },
+    "stage": {
+      "name_fi": "Päälava",
+      "url": "http://www.assembly.org/summer16/manual/",
+      "name": "Main Stage"
+    },
+    "entrance": {
+      "name_fi": "Pääovi",
+      "url": "http://www.assembly.org/summer16/manual/",
+      "name": "Main entrance"
+    },
+    "pelitalo": {
+      "name_fi": "Pelitalon osasto",
+      "url": "http://www.assembly.org/summer16/manual/",
+      "name": "Pelitalo's stand"
+    },
+    "hssc2": {
+      "name_fi": "eSports; Heartstone and StarCraft 2 -alue",
+      "url": "http://www.assembly.org/summer16/manual/",
+      "name": "eSports; Heartstone and StarCraft 2 area"
+    },
+    "screen": {
+      "name_fi": "Big screen",
+      "url": "http://www.assembly.org/summer16/manual/",
+      "name": "Big screen"
+    },
+    "technoparty": {
+      "name_fi": "Tekno-bileet",
+      "url": "http://www.assembly.org/summer16/manual/",
+      "name": "Techno party"
+    },
+    "asmtv": {
+      "name_fi": "AssemblyTV",
+      "url": "http://www.assembly.org/summer16/program/",
+      "name": "AssemblyTV"
+    },
+    "ticket_sales": {
+      "name_fi": "Ticket sales booth",
+      "url": "http://www.assembly.org/summer16/manual/",
+      "name": "Ticket sales booth"
+    },
+    "csgo": {
+      "name_fi": "eSports; CS:GO -alue",
+      "url": "http://www.assembly.org/summer16/manual/",
+      "name": "eSports; CS:GO area"
+    },
+    "iracing": {
+      "name_fi": "iRacing-alue",
+      "url": "http://simracing.fi/uutiset/sim-racing-esm-ovaalin-sm-2016",
+      "name": "iRacing area"
+    },
+    "infodesk": {
+      "name_fi": "Infodesk",
+      "url": "http://www.assembly.org/summer16/manual/",
+      "name": "Infodesk"
+    },
+    "netinfo": {
+      "name_fi": "NetInfo",
+      "url": "http://www.assembly.org/summer16/manual/",
+      "name": "NetInfo"
+    }
+  },
+  "events": [
+    {
+      "location_key": "all_areas",
+      "name": "ASSEMBLY Summer 2016 starts!",
+      "start_time": "2016-08-04T10:00+0300",
+      "original_start_time": "2016-08-04T10:00+0300",
+      "flags": [
+        "major",
+        "onsite"
+      ],
+      "end_time": "2016-08-04T10:00+0300",
+      "key": "asms16-201",
+      "name_fi": "ASSEMBLY Summer 2016 alkaa!",
+      "categories": [
+        "Event"
+      ]
+    },
+    {
+      "location_key": "entrance",
+      "name": "Main entrance opened",
+      "url": "http://www.assembly.org/summer16/manual/setting/",
+      "start_time": "2016-08-04T10:00+0300",
+      "original_start_time": "2016-08-04T10:00+0300",
+      "flags": [
+        "major",
+        "onsite"
+      ],
+      "end_time": "2016-08-04T10:00+0300",
+      "key": "asms16-202",
+      "name_fi": "Pääovi avataan",
+      "categories": [
+        "Event"
+      ]
+    },
+    {
+      "location_key": "loading",
+      "name": "Loading doors open",
+      "url": "http://www.assembly.org/summer16/manual/setting/",
+      "start_time": "2016-08-04T10:00+0300",
+      "original_start_time": "2016-08-04T10:00+0300",
+      "flags": [
+        "major",
+        "onsite"
+      ],
+      "end_time": "2016-08-04T10:00+0300",
+      "key": "asms16-203",
+      "name_fi": "Lastausovet avoinna",
+      "categories": [
+        "Event"
+      ]
+    },
+    {
+      "location_key": "pms",
+      "name": "Photo compo deadline",
+      "url": "http://www.assembly.org/demoscene/graphics/",
+      "start_time": "2016-08-04T12:00+0300",
+      "original_start_time": "2016-08-04T12:00+0300",
+      "flags": [
+
+      ],
+      "end_time": "2016-08-04T12:00+0300",
+      "key": "asms16-420",
+      "name_fi": "Valokuvakompon takaraja",
+      "categories": [
+        "Compo",
+        "Deadline"
+      ]
+    },
+    {
+      "location_key": "pms",
+      "name": "Graphics compo deadline",
+      "url": "http://www.assembly.org/demoscene/graphics/",
+      "start_time": "2016-08-04T12:00+0300",
+      "original_start_time": "2016-08-04T12:00+0300",
+      "flags": [
+
+      ],
+      "end_time": "2016-08-04T12:00+0300",
+      "key": "asms16-425",
+      "name_fi": "Grafiikkakompon takaraja",
+      "categories": [
+        "Compo",
+        "Deadline"
+      ]
+    },
+    {
+      "location_key": "pms",
+      "name": "Dance music compo deadline",
+      "url": "http://www.assembly.org/demoscene/music/",
+      "start_time": "2016-08-04T12:00+0300",
+      "original_start_time": "2016-08-04T12:00+0300",
+      "flags": [
+
+      ],
+      "end_time": "2016-08-04T12:00+0300",
+      "key": "asms16-430",
+      "name_fi": "Tanssimusiikkikompon takaraja",
+      "categories": [
+        "Compo",
+        "Deadline"
+      ]
+    },
+    {
+      "location_key": "pms",
+      "name": "Listening music compo deadline",
+      "url": "http://www.assembly.org/demoscene/music/",
+      "start_time": "2016-08-04T12:00+0300",
+      "original_start_time": "2016-08-04T12:00+0300",
+      "flags": [
+
+      ],
+      "end_time": "2016-08-04T12:00+0300",
+      "key": "asms16-435",
+      "name_fi": "Listening music -kompon takaraja",
+      "categories": [
+        "Compo",
+        "Deadline"
+      ]
+    },
+    {
+      "location_key": "pms",
+      "name": "Short film compo deadline",
+      "url": "http://www.assembly.org/demoscene/real-time/",
+      "start_time": "2016-08-04T12:00+0300",
+      "original_start_time": "2016-08-04T12:00+0300",
+      "flags": [
+
+      ],
+      "end_time": "2016-08-04T12:00+0300",
+      "key": "asms16-446",
+      "name_fi": "Lyhytelokuvakompon takaraja",
+      "categories": [
+        "Compo",
+        "Deadline"
+      ]
+    },
+    {
+      "location_key": "infodesk",
+      "name": "Short film recording assistance - come to Infodesk",
+      "url": "http://www.assembly.org/demoscene/real-time/",
+      "start_time": "2016-08-04T12:00+0300",
+      "original_start_time": "2016-08-04T12:00+0300",
+      "flags": [
+        "onsite"
+      ],
+      "end_time": "2016-08-04T15:30+0300",
+      "key": "asms16-447",
+      "name_fi": "Lyhytelokuvan formaattimuunnosapu - tule Infodeskille",
+      "categories": [
+        "Compo"
+      ]
+    },
+    {
+      "location_key": "infodesk",
+      "name": "GameDev compo recording - come to Infodesk",
+      "url": "http://www.assembly.org/demoscene/game-development/",
+      "start_time": "2016-08-04T12:00+0300",
+      "original_start_time": "2016-08-04T12:00+0300",
+      "flags": [
+        "onsite"
+      ],
+      "end_time": "2016-08-04T15:00+0300",
+      "key": "asms16-453",
+      "name_fi": "GameDev-kompon äänitys - tule Infodeskille",
+      "categories": [
+        "Compo"
+      ]
+    },
+    {
+      "location_key": "pms",
+      "name": "Real wild demo compo deadline",
+      "url": "http://www.assembly.org/demoscene/real-time/",
+      "start_time": "2016-08-04T12:00+0300",
+      "original_start_time": "2016-08-04T12:00+0300",
+      "flags": [
+
+      ],
+      "end_time": "2016-08-04T12:00+0300",
+      "key": "asms16-440",
+      "name_fi": "Real wild demo -kompon takaraja",
+      "categories": [
+        "Compo",
+        "Deadline"
+      ]
+    },
+    {
+      "location_key": "infodesk",
+      "name": "Real wild demo recording assistance - come to Infodesk",
+      "url": "http://www.assembly.org/demoscene/real-time/",
+      "start_time": "2016-08-04T12:00+0300",
+      "original_start_time": "2016-08-04T12:00+0300",
+      "flags": [
+        "onsite"
+      ],
+      "end_time": "2016-08-04T15:30+0300",
+      "key": "asms16-441",
+      "name_fi": "Real wild demo -kompon tallennusapu - tule Infodeskille",
+      "categories": [
+        "Compo"
+      ]
+    },
+    {
+      "location_key": "pms",
+      "name": "Oldskool demo compo deadline",
+      "url": "http://www.assembly.org/demoscene/real-time/",
+      "start_time": "2016-08-04T12:00+0300",
+      "original_start_time": "2016-08-04T12:00+0300",
+      "flags": [
+
+      ],
+      "end_time": "2016-08-04T12:00+0300",
+      "key": "asms16-458",
+      "name_fi": "Oldskool demo -kompon takaraja",
+      "categories": [
+        "Compo",
+        "Deadline"
+      ]
+    },
+    {
+      "location_key": "infodesk",
+      "name": "Oldskool demo compo entry recording - come to Infodesk",
+      "url": "http://www.assembly.org/demoscene/real-time/",
+      "start_time": "2016-08-04T12:00+0300",
+      "original_start_time": "2016-08-04T12:00+0300",
+      "flags": [
+        "onsite"
+      ],
+      "end_time": "2016-08-04T15:00+0300",
+      "key": "asms16-460",
+      "name_fi": "Oldskool demo -kompon teosten nauhoitus - tule Infodeskille",
+      "categories": [
+        "Compo"
+      ]
+    },
+    {
+      "location_key": "infodesk",
+      "name": "Oldskool demo compo jury - come to Infodesk",
+      "url": "http://www.assembly.org/demoscene/real-time/",
+      "start_time": "2016-08-04T13:00+0300",
+      "original_start_time": "2016-08-04T13:00+0300",
+      "flags": [
+        "onsite"
+      ],
+      "end_time": "2016-08-04T14:30+0300",
+      "key": "asms16-459",
+      "name_fi": "Oldskool demo -kompon jury - tule Infodeskille",
+      "categories": [
+        "Compo",
+        "Jury"
+      ]
+    },
+    {
+      "location_key": "seminar",
+      "name": "ARTtech seminar: Juhani Eronen: Your privacy is protected by .. what exactly?",
+      "url": "http://www.assembly.org/program/arttech-seminar/sessions/#eronen",
+      "start_time": "2016-08-04T14:00+0300",
+      "description_fi": "You know that clicking on links gets you into trouble. You don't know the half of it! We go click frenzy to show you how decades of internet tech development has led to a chaos of complexity.",
+      "original_start_time": "2016-08-04T14:00+0300",
+      "flags": [
+        "onsite"
+      ],
+      "end_time": "2016-08-04T14:45+0300",
+      "key": "asms16-502",
+      "name_fi": "ARTtech-seminaari: Juhani Eronen: Your privacy is protected by .. what exactly?",
+      "categories": [
+        "Event",
+        "Seminar"
+      ],
+      "description": "You know that clicking on links gets you into trouble. You don't know the half of it! We go click frenzy to show you how decades of internet tech development has led to a chaos of complexity."
+    },
+    {
+      "location_key": "seminar",
+      "name": "ARTtech seminar: Kadri Ugand: From Game to Studio to Business",
+      "url": "http://www.assembly.org/program/arttech-seminar/sessions/#ugand",
+      "start_time": "2016-08-04T15:00+0300",
+      "description_fi": "Majority of studios start with an idea for a game, then a team is formed around it and eventually it can turn into a business. How to better manage the process and increase the chances of that business being successful.",
+      "original_start_time": "2016-08-04T15:00+0300",
+      "flags": [
+        "onsite"
+      ],
+      "end_time": "2016-08-04T15:45+0300",
+      "key": "asms16-503",
+      "name_fi": "ARTtech-seminaari: Kadri Ugand: From Game to Studio to Business",
+      "categories": [
+        "Event",
+        "Seminar"
+      ],
+      "description": "Majority of studios start with an idea for a game, then a team is formed around it and eventually it can turn into a business. How to better manage the process and increase the chances of that business being successful."
+    },
+    {
+      "location_key": "stage",
+      "name": "Opening ceremony",
+      "start_time": "2016-08-04T15:30+0300",
+      "original_start_time": "2016-08-04T15:30+0300",
+      "flags": [
+        "major",
+        "bigscreen"
+      ],
+      "end_time": "2016-08-04T16:00+0300",
+      "key": "asms16-703",
+      "name_fi": "Avajaisseremonia",
+      "categories": [
+        "Event",
+        "Ceremony"
+      ]
+    },
+    {
+      "location_key": "stage",
+      "name": "eSM StarCraft II Summer 2016 Final",
+      "url": "http://tournaments.peliliiga.fi/pages/view/sm-starcraft-ii-2016",
+      "start_time": "2016-08-04T16:00+0300",
+      "description_fi": "Kaksi suomalaista Starcraft II pelaajalegendaa kohtaa toisensa suomenmestaruusfinaalissa. Voittaja pääsee pohjoismaidenmestaruuskilpailuun.\n\nStream URL: http://peliliiga.fi/streams",
+      "original_start_time": "2016-08-04T16:00+0300",
+      "flags": [
+        "major",
+        "bigscreen",
+        "onsite"
+      ],
+      "end_time": "2016-08-04T18:45+0300",
+      "key": "asms16-311",
+      "name_fi": "eSM StarCraft II Summer 2016 finaali",
+      "categories": [
+        "Game",
+        "Finals"
+      ],
+      "description": "Two Finnish Starcraft II scene legends face each other in the National Championship final. On top of glory and fame, winner takes a spot in the Nordic Championship Tournament. \n\nStream URL: http://peliliiga.fi/streams"
+    },
+    {
+      "location_key": "infodesk",
+      "name": "Graphics compo jury - come to Infodesk",
+      "url": "http://www.assembly.org/demoscene/graphics/",
+      "start_time": "2016-08-04T16:00+0300",
+      "original_start_time": "2016-08-04T16:00+0300",
+      "flags": [
+        "onsite"
+      ],
+      "end_time": "2016-08-04T17:00+0300",
+      "key": "asms16-426",
+      "name_fi": "Grafiikkakompon jury - tule Infodeskille",
+      "categories": [
+        "Compo",
+        "Jury"
+      ]
+    },
+    {
+      "location_key": "infodesk",
+      "name": "Dance music compo jury - come to Infodesk",
+      "url": "http://www.assembly.org/demoscene/music/",
+      "start_time": "2016-08-04T16:00+0300",
+      "original_start_time": "2016-08-04T16:00+0300",
+      "flags": [
+        "onsite"
+      ],
+      "end_time": "2016-08-04T18:30+0300",
+      "key": "asms16-431",
+      "name_fi": "Tanssi- ja kuuntelumusiikkikompojen juryt - tule Infodeskille",
+      "categories": [
+        "Compo",
+        "Jury"
+      ]
+    },
+    {
+      "location_key": "seminar",
+      "name": "ARTtech seminar: Paavo Nieminen: Learning by doing VR",
+      "url": "http://www.assembly.org/program/arttech-seminar/sessions/#nieminen",
+      "start_time": "2016-08-04T16:00+0300",
+      "original_start_time": "2016-08-04T16:00+0300",
+      "flags": [
+        "onsite"
+      ],
+      "end_time": "2016-08-04T16:45+0300",
+      "key": "asms16-504",
+      "name_fi": "ARTtech-seminaari: Paavo Nieminen: Learning by doing VR",
+      "categories": [
+        "Event",
+        "Seminar"
+      ]
+    },
+    {
+      "location_key": "seminar",
+      "name": "ARTtech seminar: Jussi Kyrönseppä: Building IP first",
+      "url": "http://www.assembly.org/program/arttech-seminar/sessions/#kyronseppa",
+      "start_time": "2016-08-04T17:00+0300",
+      "original_start_time": "2016-08-04T17:00+0300",
+      "flags": [
+        "onsite"
+      ],
+      "end_time": "2016-08-04T17:45+0300",
+      "key": "asms16-505",
+      "name_fi": "ARTtech-seminaari: Jussi Kyrönseppä: Building IP first",
+      "categories": [
+        "Event",
+        "Seminar"
+      ]
+    },
+    {
+      "location_key": "web",
+      "name": "Fast graphics compo objectives released",
+      "url": "http://www.assembly.org/demoscene/graphics/",
+      "start_time": "2016-08-04T18:00+0300",
+      "original_start_time": "2016-08-04T18:00+0300",
+      "flags": [
+
+      ],
+      "end_time": "2016-08-04T18:00+0300",
+      "key": "asms16-414",
+      "name_fi": "Fast grafiikka -kompon tehtävänkuvaus julkaistaan",
+      "categories": [
+        "Compo"
+      ]
+    },
+    {
+      "location_key": "infodesk",
+      "name": "Photo compo jury - come to Infodesk",
+      "url": "http://www.assembly.org/demoscene/graphics/",
+      "start_time": "2016-08-04T18:00+0300",
+      "original_start_time": "2016-08-04T18:00+0300",
+      "flags": [
+        "onsite"
+      ],
+      "end_time": "2016-08-04T19:00+0300",
+      "key": "asms16-421",
+      "name_fi": "Valokuvakompon jury - tule Infodeskille",
+      "categories": [
+        "Compo",
+        "Jury"
+      ]
+    },
+    {
+      "location_key": "seminar",
+      "name": "ARTtech seminar: Perttu Hämäläinen: The Augmented Climbing Wall: designing augmented reality sports",
+      "url": "http://www.assembly.org/program/arttech-seminar/sessions/#hamalainen",
+      "start_time": "2016-08-04T18:00+0300",
+      "description_fi": "The talk will share our experiences from developing and piloting the Augmented Climbing Wall, a augmented reality system that combines computer vision and interactive projected graphics for motivating and instructing indoor wall climbing. The system has been used by hundreds of climbers, including both children and adults, in both our research lab and commercial climbing centers. Our experiences highlight three central themes of how digital augmentation can contribute to a sport: increasing diversity of movement and challenges, enabling user-created content in an otherwise risky environment, and enabling procedurally generated content.",
+      "original_start_time": "2016-08-04T18:00+0300",
+      "flags": [
+        "onsite"
+      ],
+      "end_time": "2016-08-04T18:45+0300",
+      "key": "asms16-506",
+      "name_fi": "ARTtech-seminaari: Perttu Hämäläinen: The Augmented Climbing Wall: designing augmented reality sports",
+      "categories": [
+        "Event",
+        "Seminar"
+      ],
+      "description": "The talk will share our experiences from developing and piloting the Augmented Climbing Wall, a augmented reality system that combines computer vision and interactive projected graphics for motivating and instructing indoor wall climbing. The system has been used by hundreds of climbers, including both children and adults, in both our research lab and commercial climbing centers. Our experiences highlight three central themes of how digital augmentation can contribute to a sport: increasing diversity of movement and challenges, enabling user-created content in an otherwise risky environment, and enabling procedurally generated content."
+    },
+    {
+      "location_key": "infodesk",
+      "name": "Dancing and Listening music compo jury - come to Infodesk",
+      "url": "http://www.assembly.org/demoscene/music/",
+      "start_time": "2016-08-04T18:30+0300",
+      "original_start_time": "2016-08-04T18:30+0300",
+      "flags": [
+        "onsite"
+      ],
+      "end_time": "2016-08-04T21:00+0300",
+      "key": "asms16-436",
+      "name_fi": "Tanssi- ja kuuntelumusiikki-kompojen juryt - tule Infodeskille",
+      "categories": [
+        "Compo",
+        "Jury"
+      ]
+    },
+    {
+      "location_key": "stage",
+      "name": "eSM Hearthstone Summer 2016 Final",
+      "url": "http://tournaments.peliliiga.fi/pages/view/sm-hearthstone-2016",
+      "start_time": "2016-08-04T19:00+0300",
+      "description_fi": "Kuka on paras korttihai Suomen Hearthstone-skenessä? Suomenmestaruuden finaaliottelussa se selviää! Voittaja pääsee edustamaan Suomea pohjoismaidenmestaruuskilpailussa.\n\nStream: http://peliliiga.fi/streams",
+      "original_start_time": "2016-08-04T19:00+0300",
+      "flags": [
+        "major",
+        "bigscreen",
+        "onsite"
+      ],
+      "end_time": "2016-08-04T22:00+0300",
+      "key": "asms16-309",
+      "name_fi": "eSM Hearthstone Summer 2016 finaali",
+      "categories": [
+        "Game",
+        "Finals"
+      ],
+      "description": "Who is the best card shark in the Finnish Hearthstone scene? In this National Championship Final we will figure it out! Winner will represent Finland in Nordic Championship Tournament.\n\nStream: http://peliliiga.fi/streams"
+    },
+    {
+      "location_key": "seminar",
+      "name": "ARTtech seminar: Kirsi Ihalainen: Generative Sound Design",
+      "url": "http://www.assembly.org/program/arttech-seminar/sessions/#ihalainen",
+      "start_time": "2016-08-04T19:00+0300",
+      "description_fi": "The process of designing generative sound through the attributes of sound design complexity, realness, and quality will be presented and the methods of the generative sound design process introduced. This process and analysis were researched in practice with two study cases: a 3D environment with a generative sound design perception comparison user test and a generative sound installation on a location. The research discovers how the generative sound design is defined and perceived and whether the generative sound design enhances the experience and the interactivity.",
+      "original_start_time": "2016-08-04T19:00+0300",
+      "flags": [
+        "onsite"
+      ],
+      "end_time": "2016-08-04T19:45+0300",
+      "key": "asms16-507",
+      "name_fi": "ARTtech-seminaari: Kirsi Ihalainen: Generative Sound Design",
+      "categories": [
+        "Event",
+        "Seminar"
+      ],
+      "description": "The process of designing generative sound through the attributes of sound design complexity, realness, and quality will be presented and the methods of the generative sound design process introduced. This process and analysis were researched in practice with two study cases: a 3D environment with a generative sound design perception comparison user test and a generative sound installation on a location. The research discovers how the generative sound design is defined and perceived and whether the generative sound design enhances the experience and the interactivity."
+    },
+    {
+      "location_key": "web",
+      "name": "Fast music compo objectives released",
+      "url": "http://www.assembly.org/demoscene/music/",
+      "start_time": "2016-08-04T19:30+0300",
+      "original_start_time": "2016-08-04T19:30+0300",
+      "flags": [
+
+      ],
+      "end_time": "2016-08-04T19:30+0300",
+      "key": "asms16-408",
+      "name_fi": "Fast music -kompon tehtävänkuvaus julkaistaan",
+      "categories": [
+        "Compo"
+      ]
+    },
+    {
+      "location_key": "pms",
+      "name": "Fast graphics compo deadline",
+      "url": "http://www.assembly.org/demoscene/graphics/",
+      "start_time": "2016-08-04T19:30+0300",
+      "original_start_time": "2016-08-04T19:30+0300",
+      "flags": [
+
+      ],
+      "end_time": "2016-08-04T19:30+0300",
+      "key": "asms16-415",
+      "name_fi": "Fast graphics -kompon takaraja",
+      "categories": [
+        "Compo",
+        "Deadline"
+      ]
+    },
+    {
+      "location_key": "infodesk",
+      "name": "Fast graphics compo jury - come to Infodesk",
+      "url": "http://www.assembly.org/demoscene/graphics/",
+      "start_time": "2016-08-04T20:00+0300",
+      "original_start_time": "2016-08-04T20:00+0300",
+      "flags": [
+        "onsite"
+      ],
+      "end_time": "2016-08-04T21:00+0300",
+      "key": "asms16-416",
+      "name_fi": "Fast graphics -kompon jury - tule Infodeskille",
+      "categories": [
+        "Compo",
+        "Jury"
+      ]
+    },
+    {
+      "location_key": "seminar",
+      "name": "ARTtech seminar: Ville Sorsa: Designing sound for time bending Quantum Break",
+      "url": "http://www.assembly.org/program/arttech-seminar/sessions/#sorsa",
+      "start_time": "2016-08-04T20:00+0300",
+      "description_fi": "In this talk Sorsa will go through the audio production process of Quantum Break: The technical and creative design challenges and an overview of creating high level aesthetics. The presentation will give you an unique opportunity to see how the time bending experience of Quantum Break was created and what was learned in the process.",
+      "original_start_time": "2016-08-04T20:00+0300",
+      "flags": [
+        "onsite"
+      ],
+      "end_time": "2016-08-04T20:45+0300",
+      "key": "asms16-508",
+      "name_fi": "ARTtech-seminaari: Ville Sorsa: Designing sound for time bending Quantum Break",
+      "categories": [
+        "Event",
+        "Seminar"
+      ],
+      "description": "In this talk Sorsa will go through the audio production process of Quantum Break: The technical and creative design challenges and an overview of creating high level aesthetics. The presentation will give you an unique opportunity to see how the time bending experience of Quantum Break was created and what was learned in the process."
+    },
+    {
+      "location_key": "pms",
+      "name": "Fast music compo deadline",
+      "url": "http://www.assembly.org/demoscene/music/",
+      "start_time": "2016-08-04T21:00+0300",
+      "original_start_time": "2016-08-04T21:00+0300",
+      "flags": [
+
+      ],
+      "end_time": "2016-08-04T21:00+0300",
+      "key": "asms16-409",
+      "name_fi": "Fast music -kompon takaraja",
+      "categories": [
+        "Compo",
+        "Deadline"
+      ]
+    },
+    {
+      "location_key": "infodesk",
+      "name": "Real wild demo compo jury - come to Infodesk",
+      "url": "http://www.assembly.org/demoscene/real-time/",
+      "start_time": "2016-08-04T21:00+0300",
+      "original_start_time": "2016-08-04T21:00+0300",
+      "flags": [
+        "onsite"
+      ],
+      "end_time": "2016-08-04T22:00+0300",
+      "key": "asms16-442",
+      "name_fi": "Real wild demo -kompon jury - tule Infodeskille",
+      "categories": [
+        "Compo",
+        "Jury"
+      ]
+    },
+    {
+      "location_key": "infodesk",
+      "name": "Fast music compo jury - come to Infodesk",
+      "url": "http://www.assembly.org/demoscene/music/",
+      "start_time": "2016-08-04T21:30+0300",
+      "original_start_time": "2016-08-04T21:30+0300",
+      "flags": [
+        "onsite"
+      ],
+      "end_time": "2016-08-04T23:00+0300",
+      "key": "asms16-410",
+      "name_fi": "Fast music -kompon jury - tule Infodeskille",
+      "categories": [
+        "Compo",
+        "Jury"
+      ]
+    },
+    {
+      "location_key": "stage",
+      "name": "eSM CS:GO Challenge Summer 2016 Final",
+      "url": "http://tournaments.peliliiga.fi/pages/view/sm-cs-go-2016",
+      "start_time": "2016-08-04T22:00+0300",
+      "description_fi": "Suomenmestaruuskilpailun finaali, jossa parhaat parhaista taistelevat paikasta edustaa Suomea pohjoismaidenmestaruuskilpailussa.\n\nStream: http://peliliiga.fi/streams",
+      "original_start_time": "2016-08-04T22:00+0300",
+      "flags": [
+        "major",
+        "bigscreen",
+        "onsite"
+      ],
+      "end_time": "2016-08-05T01:00+0300",
+      "key": "asms16-307",
+      "name_fi": "eSM CS:GO Challenge Summer 2016 finaali",
+      "categories": [
+        "Game",
+        "Finals"
+      ],
+      "description": "National Championship tournament finals where the best of the best are battling who should represent Finland in Nordic Championship Tournament!\n\nStream: http://peliliiga.fi/streams"
+    },
+    {
+      "location_key": "pms",
+      "name": "Sign-up for sports compos",
+      "url": "http://www.assembly.org/program/sports/",
+      "start_time": "2016-08-05T08:00+0300",
+      "original_start_time": "2016-08-05T08:00+0300",
+      "flags": [
+
+      ],
+      "end_time": "2016-08-05T08:00+0300",
+      "key": "asms16-402",
+      "name_fi": "Ilmottautuminen urheilukilpailuihin",
+      "categories": [
+        "Compo"
+      ]
+    },
+    {
+      "location_key": "infodesk",
+      "name": "Sport compos - gather up at the infodesk",
+      "url": "http://www.assembly.org/program/sports/",
+      "start_time": "2016-08-05T11:45+0300",
+      "original_start_time": "2016-08-05T11:45+0300",
+      "flags": [
+        "onsite"
+      ],
+      "end_time": "2016-08-05T11:45+0300",
+      "key": "asms16-403",
+      "name_fi": "Urheilukompot - tule Infodeskille",
+      "categories": [
+        "Compo"
+      ]
+    },
+    {
+      "location_key": "csgo",
+      "name": "ASUS ROG Summer 2016 CS:GO Group Stage",
+      "url": "http://asusrogtournament.com/",
+      "start_time": "2016-08-05T12:00+0300",
+      "description_fi": "Stream: http://tournaments.peliliiga.fi/summer16/streams",
+      "original_start_time": "2016-08-05T12:00+0300",
+      "flags": [
+        "onsite"
+      ],
+      "end_time": "2016-08-06T00:00+0300",
+      "key": "asms16-302",
+      "name_fi": "ASUS ROG Summer 2016 CS:GO Lohkopelit",
+      "categories": [
+        "Game"
+      ],
+      "description": "Stream: http://tournaments.peliliiga.fi/summer16/streams"
+    },
+    {
+      "location_key": "own_place",
+      "name": "Overwatch BYOC Sign-up ends & Check-in starts",
+      "start_time": "2016-08-05T12:00+0300",
+      "original_start_time": "2016-08-05T12:00+0300",
+      "flags": [
+
+      ],
+      "end_time": "2016-08-05T13:00+0300",
+      "key": "asms16-324",
+      "name_fi": "Overwatch BYOC #2 Rekisteröinti loppuu & Ilmoittautuminen alkaa",
+      "categories": [
+        "Game"
+      ]
+    },
+    {
+      "location_key": "sportfield",
+      "name": "Disk throwing compo",
+      "url": "http://www.assembly.org/program/sports/",
+      "start_time": "2016-08-05T12:00+0300",
+      "original_start_time": "2016-08-05T12:00+0300",
+      "flags": [
+        "onsite"
+      ],
+      "end_time": "2016-08-05T13:00+0300",
+      "key": "asms16-404",
+      "name_fi": "Disketin heitto -kompo",
+      "categories": [
+        "Compo",
+        "Show"
+      ]
+    },
+    {
+      "location_key": "infodesk",
+      "name": "Short film compo jury - come to Infodesk",
+      "url": "http://www.assembly.org/demoscene/short-film/",
+      "start_time": "2016-08-05T12:00+0300",
+      "original_start_time": "2016-08-05T12:00+0300",
+      "flags": [
+        "onsite"
+      ],
+      "end_time": "2016-08-05T14:00+0300",
+      "key": "asms16-448",
+      "name_fi": "Lyhytelokuvakompon jury - tule Infodeskille",
+      "categories": [
+        "Compo",
+        "Jury"
+      ]
+    },
+    {
+      "location_key": "sportfield",
+      "name": "CD throwing compo",
+      "url": "http://www.assembly.org/program/sports/",
+      "start_time": "2016-08-05T12:30+0300",
+      "original_start_time": "2016-08-05T12:30+0300",
+      "flags": [
+        "onsite"
+      ],
+      "end_time": "2016-08-05T13:30+0300",
+      "key": "asms16-405",
+      "name_fi": "CD:n heitto -kompo",
+      "categories": [
+        "Compo",
+        "Show"
+      ]
+    },
+    {
+      "location_key": "sportfield",
+      "name": "Soccer tournament",
+      "url": "http://www.assembly.org/program/sports/",
+      "start_time": "2016-08-05T13:00+0300",
+      "original_start_time": "2016-08-05T13:00+0300",
+      "flags": [
+        "onsite"
+      ],
+      "end_time": "2016-08-05T16:00+0300",
+      "key": "asms16-406",
+      "name_fi": "Jalkapalloturnaus",
+      "categories": [
+        "Compo",
+        "Show"
+      ]
+    },
+    {
+      "location_key": "screen",
+      "name": "Fast music compo",
+      "url": "http://www.assembly.org/demoscene/music/",
+      "start_time": "2016-08-05T13:00+0300",
+      "description_fi": "Fast musiikki -kompo järjestetään tapahtuman aikana. Muusikolle annetaan tietyt rajoitukset, joiden sisällä on 90 minuutin aikarajan kuluessa luotava uusi, mielenkiintoinen teos. Fast-kilpailuissa aikaraja merkitsee eniten ja mitä sen aikana saa aikaiseksi. Teosten hienosäätö jää vähemmälle ja raaka luovuus tulee esiin.",
+      "original_start_time": "2016-08-05T13:00+0300",
+      "flags": [
+        "major",
+        "bigscreen"
+      ],
+      "end_time": "2016-08-05T13:45+0300",
+      "key": "asms16-411",
+      "name_fi": "Fast music -kompo",
+      "categories": [
+        "Compo",
+        "Show"
+      ],
+      "description": "The Fast music competition is organized during the party: you have a given theme or some other constraints, 90 minutes of time, and you need to come up with an interesting song. It's the speed that counts – there is no time to fine-tune every minor detail to get the compelling piece of art finished."
+    },
+    {
+      "location_key": "own_place",
+      "name": "Overwatch BYOC tournament",
+      "url": "http://tournaments.peliliiga.fi/summer16/tournaments/view/overwatch-byoc",
+      "start_time": "2016-08-05T13:30+0300",
+      "original_start_time": "2016-08-05T13:30+0300",
+      "flags": [
+
+      ],
+      "end_time": "2016-08-05T13:30+0300",
+      "key": "asms16-325",
+      "name_fi": "Overwatch BYOC -turnaus",
+      "categories": [
+        "Game"
+      ]
+    },
+    {
+      "location_key": "screen",
+      "name": "Fast graphics compo",
+      "url": "http://www.assembly.org/demoscene/graphics/",
+      "start_time": "2016-08-05T13:45+0300",
+      "description_fi": "Fast graphics eli nopea grafiikka järjestetään partyjen aikana: kilpailijoille annetaan teema tai muita rajoituksia, 90 minuuttia aikaa, ja kilpailijoiden tulee luoda kiinnostava kuva. Aika ratkaisee; perfektionistiselle hienosäädölle ei ole aikaa jos haluat saada teoksen valmiiksi.",
+      "original_start_time": "2016-08-05T13:45+0300",
+      "flags": [
+        "major",
+        "bigscreen"
+      ],
+      "end_time": "2016-08-05T14:00+0300",
+      "key": "asms16-417",
+      "name_fi": "Fast graphics -kompo",
+      "categories": [
+        "Compo",
+        "Show"
+      ],
+      "description": "The fast graphics competition is organized during the party: you have a given theme or some other constraints, 90 minutes of time, and you need to come up with an interesting picture. It's the speed that counts – there is no time to fine-tune every minor detail to get the compelling piece of art finished."
+    },
+    {
+      "location_key": "own_place",
+      "name": "CS:GO BYOC Premium Sign-up ends & Check-in starts",
+      "url": "http://tournaments.peliliiga.fi/summer16/tournaments/view/cs-go-byoc-premium",
+      "start_time": "2016-08-05T14:00+0300",
+      "original_start_time": "2016-08-05T14:00+0300",
+      "flags": [
+
+      ],
+      "end_time": "2016-08-05T18:00+0300",
+      "key": "asms16-334",
+      "name_fi": "CS:GO BYOC Premium Rekisteröinti loppuu & Ilmoittautuminen alkaa ",
+      "categories": [
+        "Game"
+      ]
+    },
+    {
+      "location_key": "own_place",
+      "name": "CS:GO BYOC Casual Sign-up ends & Check-in starts",
+      "url": "http://tournaments.peliliiga.fi/summer16/tournaments/view/cs-go-byoc-casual",
+      "start_time": "2016-08-05T14:00+0300",
+      "original_start_time": "2016-08-05T14:00+0300",
+      "flags": [
+
+      ],
+      "end_time": "2016-08-05T18:00+0300",
+      "key": "asms16-338",
+      "name_fi": "CS:GO BYOC Casual Rekisteröinti loppuu & Ilmoittautuminen alkaa ",
+      "categories": [
+        "Game"
+      ]
+    },
+    {
+      "location_key": "screen",
+      "name": "Compostudio: Fast Music & Graphics",
+      "url": "http://www.assembly.org/program/assemblytv",
+      "start_time": "2016-08-05T14:00+0300",
+      "original_start_time": "2016-08-05T14:00+0300",
+      "flags": [
+        "bigscreen"
+      ],
+      "end_time": "2016-08-05T14:30+0300",
+      "key": "asms16-418",
+      "name_fi": "Kompostudio: Fast music & graphics",
+      "categories": [
+        "Stream",
+        "Studio"
+      ]
+    },
+    {
+      "location_key": "screen",
+      "name": "Photo compo",
+      "url": "http://www.assembly.org/demoscene/graphics/",
+      "start_time": "2016-08-05T14:30+0300",
+      "description_fi": "Valokuvakompo haastaa sinut ottamaan vaikuttavan valokuvan ilman liiallista kuvamuokkausta. Vain minimaalinen jälkikäsittely on sallittua (rajaus, skaalaus, kontrasti, värilämpöisyys).",
+      "original_start_time": "2016-08-05T14:30+0300",
+      "flags": [
+        "major",
+        "bigscreen"
+      ],
+      "end_time": "2016-08-05T14:45+0300",
+      "key": "asms16-422",
+      "name_fi": "Valokuvakompo",
+      "categories": [
+        "Compo",
+        "Show"
+      ],
+      "description": "The photography competition challenges you to take a stunning picture without excessive post-processing. Only minor re-touching (crop, scale, contrast, color temperature) is allowed."
+    },
+    {
+      "location_key": "screen",
+      "name": "Graphics compo",
+      "url": "http://www.assembly.org/demoscene/graphics/",
+      "start_time": "2016-08-05T14:45+0300",
+      "description_fi": "Grafiikkakompo ei rajoita teemoja tai tekniikoita. Tuomaristo esittää erilaisin tekniikoin tehtyjä kuvia, esim. piirrettyjä, renderöityjä, valokuvattuja ja muokattuja, kyseessä on siis monipuolinen kilpailu.",
+      "original_start_time": "2016-08-05T14:45+0300",
+      "flags": [
+        "major",
+        "bigscreen"
+      ],
+      "end_time": "2016-08-05T15:00+0300",
+      "key": "asms16-427",
+      "name_fi": "Grafiikkakompo",
+      "categories": [
+        "Compo",
+        "Show"
+      ],
+      "description": "The general graphics competition does not limit themes and techniques in any way. The jury will bring forth images of various techniques, e.g., drawn, rendered, photographed with after touch, to have a versatile graphics competition."
+    },
+    {
+      "location_key": "screen",
+      "name": "Compostudio: Photo & Graphics",
+      "url": "http://www.assembly.org/program/assemblytv",
+      "start_time": "2016-08-05T15:00+0300",
+      "original_start_time": "2016-08-05T15:00+0300",
+      "flags": [
+        "bigscreen"
+      ],
+      "end_time": "2016-08-05T15:30+0300",
+      "key": "asms16-428",
+      "name_fi": "Kompostudio: Valokuva- & Grafiikka",
+      "categories": [
+        "Stream",
+        "Studio"
+      ]
+    },
+    {
+      "location_key": "own_place",
+      "name": "Hearthstone BYOC #1 Sign-up ends & Check-in starts",
+      "url": "http://tournaments.peliliiga.fi/summer16/tournaments/view/hearthstone-byoc-1",
+      "start_time": "2016-08-05T16:00+0300",
+      "original_start_time": "2016-08-05T16:00+0300",
+      "flags": [
+
+      ],
+      "end_time": "2016-08-05T17:00+0300",
+      "key": "asms16-329",
+      "name_fi": "Hearthstone BYOC #1 Rekisteröinti loppuu & Ilmoittautuminen alkaa ",
+      "categories": [
+        "Game"
+      ]
+    },
+    {
+      "location_key": "screen",
+      "name": "Dance music compo",
+      "url": "http://www.assembly.org/demoscene/music/",
+      "start_time": "2016-08-05T16:00+0300",
+      "description_fi": "Tanssimusiikki -kompo on tarkoitettu musiikille, jossa on tanssimusiikin tahti ja tunnelma. Tanssimusiikin tahtiin voit tanssia, saat energiasi virtaamaan ja jalat liikkumaan.",
+      "original_start_time": "2016-08-05T16:00+0300",
+      "flags": [
+        "major",
+        "bigscreen"
+      ],
+      "end_time": "2016-08-05T16:45+0300",
+      "key": "asms16-432",
+      "name_fi": "Tanssimusiikkikompo",
+      "categories": [
+        "Compo",
+        "Show"
+      ],
+      "description": "The Dance music competition is for music that has a danceable beat and character. It is something that you can groove to, get your energy flowing and feet moving."
+    },
+    {
+      "location_key": "activityarea",
+      "name": "Elisa Drone Racing Qualifiers",
+      "start_time": "2016-08-05T16:00+0300",
+      "original_start_time": "2016-08-05T16:00+0300",
+      "flags": [
+        "onsite"
+      ],
+      "end_time": "2016-08-05T18:00+0300",
+      "key": "asms16-807",
+      "name_fi": "Elisa Drone Racing -karsinta",
+      "categories": [
+        "event"
+      ]
+    },
+    {
+      "location_key": "screen",
+      "name": "Compostudio: Dance music",
+      "url": "http://www.assembly.org/program/assemblytv",
+      "start_time": "2016-08-05T16:45+0300",
+      "original_start_time": "2016-08-05T16:45+0300",
+      "flags": [
+        "bigscreen"
+      ],
+      "end_time": "2016-08-05T17:15+0300",
+      "key": "asms16-433",
+      "name_fi": "Kompostudio: Tanssimusiikki",
+      "categories": [
+        "Stream",
+        "Studio"
+      ]
+    },
+    {
+      "location_key": "own_place",
+      "name": "StarCraft II BYOC #1 Sign-up ends & Check-in starts",
+      "url": "http://tournaments.peliliiga.fi/summer16/tournaments/view/starcraft-ii-byoc-1",
+      "start_time": "2016-08-05T17:00+0300",
+      "original_start_time": "2016-08-05T17:00+0300",
+      "flags": [
+
+      ],
+      "end_time": "2016-08-05T17:00+0300",
+      "key": "asms16-317",
+      "name_fi": "StarCraft II BYOC #1 Rekisteröinti loppuu & Ilmoittautuminen alkaa ",
+      "categories": [
+        "Game"
+      ]
+    },
+    {
+      "location_key": "own_place",
+      "name": "Hearthstone BYOC #1 Tournament",
+      "url": "http://tournaments.peliliiga.fi/summer16/tournaments/view/hearthstone-byoc-1",
+      "start_time": "2016-08-05T17:00+0300",
+      "original_start_time": "2016-08-05T17:00+0300",
+      "flags": [
+
+      ],
+      "end_time": "2016-08-05T17:00+0300",
+      "key": "asms16-330",
+      "name_fi": "Hearthstone BYOC #1 turnaus",
+      "categories": [
+        "Game"
+      ]
+    },
+    {
+      "location_key": "screen",
+      "name": "Listening music compo",
+      "url": "http://www.assembly.org/demoscene/music/",
+      "start_time": "2016-08-05T17:15+0300",
+      "description_fi": "Kuuntelumusiikki -kompo on tarkoitettu kaikelle musiikille, joka ei kuulu mihinkään varsinaiseen kategoriaan. Esimerkiksi ambient ja orkestraalinen musiikki, balladit, fantasiamusiikki ja pelien soundtrack:t kuuluvat kuuntelumusiikki -kompoon.",
+      "original_start_time": "2016-08-05T17:15+0300",
+      "flags": [
+        "major",
+        "bigscreen"
+      ],
+      "end_time": "2016-08-05T18:00+0300",
+      "key": "asms16-437",
+      "name_fi": "Kuuntelumusiikki-kompo",
+      "categories": [
+        "Compo",
+        "Show"
+      ],
+      "description": "The listening music competition is for all music that doesnt fit to any specific category. Genres such as ambient, orchestral, ballads, fantasymusic and game/movie soundtracks belong to the Listening music compo."
+    },
+    {
+      "location_key": "own_place",
+      "name": "StarCraft II BYOC #1 Group stage",
+      "url": "http://tournaments.peliliiga.fi/summer16/tournaments/view/starcraft-ii-byoc-1",
+      "start_time": "2016-08-05T18:00+0300",
+      "original_start_time": "2016-08-05T18:00+0300",
+      "flags": [
+
+      ],
+      "end_time": "2016-08-05T21:00+0300",
+      "key": "asms16-318",
+      "name_fi": "StarCraft II BYOC #1 Lohkopelit",
+      "categories": [
+        "Game"
+      ]
+    },
+    {
+      "location_key": "own_place",
+      "name": "CS:GO BYOC Premium Groups A - H",
+      "url": "http://tournaments.peliliiga.fi/summer16/tournaments/view/cs-go-byoc-premium",
+      "start_time": "2016-08-05T18:00+0300",
+      "original_start_time": "2016-08-05T18:00+0300",
+      "flags": [
+
+      ],
+      "end_time": "2016-08-05T22:00+0300",
+      "key": "asms16-335",
+      "name_fi": "CS:GO BYOC Premium Ryhmät A - H",
+      "categories": [
+        "Game"
+      ]
+    },
+    {
+      "location_key": "own_place",
+      "name": "CS:GO BYOC Casual Groups A - H",
+      "url": "http://tournaments.peliliiga.fi/summer16/tournaments/view/cs-go-byoc-casual",
+      "start_time": "2016-08-05T18:00+0300",
+      "original_start_time": "2016-08-05T18:00+0300",
+      "flags": [
+
+      ],
+      "end_time": "2016-08-05T22:00+0300",
+      "key": "asms16-339",
+      "name_fi": "CS:GO BYOC Casual Ryhmät A - H",
+      "categories": [
+        "Game"
+      ]
+    },
+    {
+      "location_key": "screen",
+      "name": "Compostudio: Listening music",
+      "url": "http://www.assembly.org/program/assemblytv",
+      "start_time": "2016-08-05T18:00+0300",
+      "original_start_time": "2016-08-05T18:00+0300",
+      "flags": [
+        "bigscreen"
+      ],
+      "end_time": "2016-08-05T18:30+0300",
+      "key": "asms16-438",
+      "name_fi": "Kompostudio: Listening music",
+      "categories": [
+        "Stream",
+        "Studio"
+      ]
+    },
+    {
+      "location_key": "screen",
+      "name": "Short film compo",
+      "url": "http://www.assembly.org/demoscene/short-film/",
+      "start_time": "2016-08-05T18:30+0300",
+      "description_fi": "Lyhytelokuva -kompo on tarkoitettu animoiduille ja tietokoneanimoiduille lyhytelokuville, olivat ne sitten 2D- tai 3D-muodossa. Kompoon voivat myös osallistua perinteiset lyhytelokuvat (näyttelijöitä, joita on kuvattu kameralla) ja muun tyyppiset lyhytelokuvat. Kaikkien lyhytelokuvien on oltava toistovalmiita elokuvatiedostoja.",
+      "original_start_time": "2016-08-05T18:30+0300",
+      "flags": [
+        "major",
+        "bigscreen"
+      ],
+      "end_time": "2016-08-05T19:15+0300",
+      "key": "asms16-449",
+      "name_fi": "Lyhytelokuva-kompo",
+      "categories": [
+        "Compo",
+        "Show"
+      ],
+      "description": "The Short film competition is for animated, CGI, 2D or 3D, actors & camera and any other type of short movies that are prerendered into a movie file."
+    },
+    {
+      "location_key": "pms",
+      "name": "1k intro compo deadline",
+      "url": "http://www.assembly.org/demoscene/real-time/",
+      "start_time": "2016-08-05T19:00+0300",
+      "original_start_time": "2016-08-05T19:00+0300",
+      "flags": [
+
+      ],
+      "end_time": "2016-08-05T19:00+0300",
+      "key": "asms16-465",
+      "name_fi": "1k intro -kompon takaraja",
+      "categories": [
+        "Compo",
+        "Deadline"
+      ]
+    },
+    {
+      "location_key": "pms",
+      "name": "4k intro compo deadline",
+      "url": "http://www.assembly.org/demoscene/real-time/",
+      "start_time": "2016-08-05T19:00+0300",
+      "original_start_time": "2016-08-05T19:00+0300",
+      "flags": [
+
+      ],
+      "end_time": "2016-08-05T19:00+0300",
+      "key": "asms16-470",
+      "name_fi": "4k intro -kompon takaraja",
+      "categories": [
+        "Compo",
+        "Deadline"
+      ]
+    },
+    {
+      "location_key": "pms",
+      "name": "Demo compo deadline",
+      "url": "http://www.assembly.org/demoscene/real-time/",
+      "start_time": "2016-08-05T19:00+0300",
+      "original_start_time": "2016-08-05T19:00+0300",
+      "flags": [
+
+      ],
+      "end_time": "2016-08-05T19:00+0300",
+      "key": "asms16-475",
+      "name_fi": "Demo-kompon takaraja",
+      "categories": [
+        "Compo",
+        "Deadline"
+      ]
+    },
+    {
+      "location_key": "screen",
+      "name": "Compostudio: Short film",
+      "url": "http://www.assembly.org/program/assemblytv",
+      "start_time": "2016-08-05T19:15+0300",
+      "original_start_time": "2016-08-05T19:15+0300",
+      "flags": [
+        "bigscreen"
+      ],
+      "end_time": "2016-08-05T19:45+0300",
+      "key": "asms16-450",
+      "name_fi": "Kompostudio: Lyhytelokuva",
+      "categories": [
+        "Stream",
+        "Studio"
+      ]
+    },
+    {
+      "location_key": "screen",
+      "name": "GameDev compo",
+      "url": "http://www.assembly.org/demoscene/game-development/",
+      "start_time": "2016-08-05T19:45+0300",
+      "original_start_time": "2016-08-05T19:45+0300",
+      "flags": [
+        "major",
+        "bigscreen"
+      ],
+      "end_time": "2016-08-05T20:45+0300",
+      "key": "asms16-455",
+      "name_fi": "GameDev-kompo",
+      "categories": [
+        "Compo",
+        "Show"
+      ]
+    },
+    {
+      "location_key": "screen",
+      "name": "Compostudio: GameDev",
+      "url": "http://www.assembly.org/program/assemblytv",
+      "start_time": "2016-08-05T20:45+0300",
+      "original_start_time": "2016-08-05T20:45+0300",
+      "flags": [
+        "bigscreen"
+      ],
+      "end_time": "2016-08-05T21:15+0300",
+      "key": "asms16-456",
+      "name_fi": "Kompostudio: GameDev",
+      "categories": [
+        "Stream",
+        "Studio"
+      ]
+    },
+    {
+      "location_key": "own_place",
+      "name": "StarCraft II BYOC #1 Playoffs",
+      "url": "http://tournaments.peliliiga.fi/summer16/tournaments/view/starcraft-ii-byoc-1",
+      "start_time": "2016-08-05T21:00+0300",
+      "original_start_time": "2016-08-05T21:00+0300",
+      "flags": [
+
+      ],
+      "end_time": "2016-08-06T01:00+0300",
+      "key": "asms16-319",
+      "name_fi": "StarCraft II BYOC #1 Pudotuspelit",
+      "categories": [
+        "Game"
+      ]
+    },
+    {
+      "location_key": "screen",
+      "name": "Real wild demo compo",
+      "url": "http://www.assembly.org/demoscene/real-time/",
+      "start_time": "2016-08-05T21:15+0300",
+      "description_fi": "Ohjelmoijat ja näpertelijät rakastavat haasteita - tämä kompo on kaikille reaaliaikaisille, ohjelmoiduille esityksille jotka eivät mahdu edellisiin kategorioihin. Kaikki millä pystyy pyörittämään koodia kelpaa; oskillokoopeista ohjelmoitaviin laskimiin. Tämä kompo on digitaalinen friikkisirkus!",
+      "original_start_time": "2016-08-05T21:15+0300",
+      "flags": [
+        "major",
+        "bigscreen"
+      ],
+      "end_time": "2016-08-05T22:00+0300",
+      "key": "asms16-443",
+      "name_fi": "Real wild demo-kompo",
+      "categories": [
+        "Compo",
+        "Show"
+      ],
+      "description": "Programmers and tinkerers like to go crazy - this competition is for all real-time, programmed creations that do not fit in the previous categories. You will find truly original creations, made on programmable calculators, oscilloscopes, and about anything that can run code. It's a digital freak show!"
+    },
+    {
+      "location_key": "own_place",
+      "name": "CS:GO BYOC Premium Groups I - P",
+      "url": "http://tournaments.peliliiga.fi/summer16/tournaments/view/cs-go-byoc-premium",
+      "start_time": "2016-08-05T22:00+0300",
+      "original_start_time": "2016-08-05T22:00+0300",
+      "flags": [
+
+      ],
+      "end_time": "2016-08-06T02:00+0300",
+      "key": "asms16-336",
+      "name_fi": "CS:GO BYOC Premium Ryhmät I - P",
+      "categories": [
+        "Game"
+      ]
+    },
+    {
+      "location_key": "own_place",
+      "name": "CS:GO BYOC Casual Groups I - P",
+      "url": "http://tournaments.peliliiga.fi/summer16/tournaments/view/cs-go-byoc-casual",
+      "start_time": "2016-08-05T22:00+0300",
+      "original_start_time": "2016-08-05T22:00+0300",
+      "flags": [
+
+      ],
+      "end_time": "2016-08-06T02:00+0300",
+      "key": "asms16-340",
+      "name_fi": "CS:GO BYOC Casual Ryhmät I - P",
+      "categories": [
+        "Game"
+      ]
+    },
+    {
+      "location_key": "screen",
+      "name": "Compostudio: Real wild demo",
+      "url": "http://www.assembly.org/program/assemblytv",
+      "start_time": "2016-08-05T22:00+0300",
+      "original_start_time": "2016-08-05T22:00+0300",
+      "flags": [
+        "bigscreen"
+      ],
+      "end_time": "2016-08-05T22:30+0300",
+      "key": "asms16-444",
+      "name_fi": "Kompostudio: Real wild demo",
+      "categories": [
+        "Stream",
+        "Studio"
+      ]
+    },
+    {
+      "location_key": "screen",
+      "name": "Oldskool demo",
+      "url": "http://www.assembly.org/demoscene/real-time/",
+      "start_time": "2016-08-05T22:30+0300",
+      "description_fi": "Oldskool demo -kilpailu haastaa osallistujat ohjelmoimaan vanhoilla tietokoneilla, jotka tänä vuonna ovat Pentium-luokan PC, Amiga AGA ja Atari Falcon. Tämä tarkoittaa, että he kohtaavat tiukkoja rajoituksia koskien tehokkuutta ja muistia, sekä käyttöjärjestelmän ja arkkitehtuurin oikkuja menneisyyden käyttöympäristöissä. Jotkut ohjelmoijat, jotka pitävät kiinni alustasta pitkään, pystyvät aina puristamaan taikaa  vanhoista laatikoista 1990-luvulta.",
+      "original_start_time": "2016-08-05T22:30+0300",
+      "flags": [
+        "major",
+        "bigscreen"
+      ],
+      "end_time": "2016-08-05T23:00+0300",
+      "key": "asms16-462",
+      "name_fi": "Oldskool demo-kompo",
+      "categories": [
+        "Compo",
+        "Show"
+      ],
+      "description": "The Oldskool demo competition requires participants to program on old computers, which this year includes Pentium-class PC, Amiga AGA and Atari Falcon. This means they will encounter strict limitations based on the performance, memory, operating system and architecture quirks of the past computing platforms. Some programmers, by sticking with a platform for a long time, are always able to squeeze even more magic out of those old boxes from the 1990s."
+    },
+    {
+      "location_key": "screen",
+      "name": "Compostudio: Oldskool demo",
+      "url": "http://www.assembly.org/program/assemblytv",
+      "start_time": "2016-08-05T23:00+0300",
+      "original_start_time": "2016-08-05T23:00+0300",
+      "flags": [
+        "bigscreen"
+      ],
+      "end_time": "2016-08-05T23:30+0300",
+      "key": "asms16-463",
+      "name_fi": "Kompostudio: Oldskool demo",
+      "categories": [
+        "Stream",
+        "Studio"
+      ]
+    },
+    {
+      "location_key": "stage",
+      "name": "Concert: Kebu",
+      "url": "http://www.assembly.org/summer16/program/concerts/",
+      "start_time": "2016-08-05T23:30+0300",
+      "original_start_time": "2016-08-05T23:30+0300",
+      "flags": [
+        "major",
+        "bigscreen",
+        "onsite"
+      ],
+      "end_time": "2016-08-06T01:30+0300",
+      "key": "asms16-803",
+      "name_fi": "Konsertti: Kebu",
+      "categories": [
+        "concert"
+      ]
+    },
+    {
+      "location_key": "seminar",
+      "name": "ARTtech seminar: Pelastakaa lapset \"pelit ja raha\" panel discussion",
+      "url": "http://www.assembly.org/program/arttech-seminar/",
+      "start_time": "2016-08-06T10:00+0300",
+      "original_start_time": "2016-08-06T10:00+0300",
+      "flags": [
+        "onsite"
+      ],
+      "end_time": "2016-08-06T10:45+0300",
+      "key": "asms16-510",
+      "name_fi": "ARTtech-seminaari: Pelastakaa lapset \"pelit ja raha\" panel discussion",
+      "categories": [
+        "Event",
+        "Seminar"
+      ]
+    },
+    {
+      "location_key": "iracing",
+      "name": "eSM Sim Racing 2016 Finals",
+      "url": "http://simracing.fi/uutiset/sim-racing-esm-ovaalin-sm-2016",
+      "start_time": "2016-08-06T11:00+0300",
+      "description_fi": "Stream URL: https://www.twitch.tv/fsrc",
+      "original_start_time": "2016-08-06T11:00+0300",
+      "flags": [
+        "major",
+        "onsite"
+      ],
+      "end_time": "2016-08-06T16:00+0300",
+      "key": "asms16-313",
+      "name_fi": "eSM Sim Racing 2016 finaali",
+      "categories": [
+        "Game",
+        "Finals"
+      ],
+      "description": "Stream URL: https://www.twitch.tv/fsrc"
+    },
+    {
+      "location_key": "seminar",
+      "name": "ARTtech seminar: Veli-Pekka Piirainen: Critical Ops - the first FPS game for mobile eSports",
+      "url": "http://www.assembly.org/program/arttech-seminar/sessions/#piirainen",
+      "start_time": "2016-08-06T11:00+0300",
+      "description_fi": "In 2015 Critical Force set up the company vision \"We will become the global market leader of real-time mobile FPS multiplayer games with the largest FPS eSports community in the world\". This talk tells you what has been done in the past year, what has been achieved so far and what does the future looks like in the competitive mobile FPS gaming!",
+      "original_start_time": "2016-08-06T11:00+0300",
+      "flags": [
+        "onsite"
+      ],
+      "end_time": "2016-08-06T11:45+0300",
+      "key": "asms16-511",
+      "name_fi": "ARTtech-seminaari: Veli-Pekka Piirainen: Critical Ops - the first FPS game for mobile eSports",
+      "categories": [
+        "Event",
+        "Seminar"
+      ],
+      "description": "In 2015 Critical Force set up the company vision \"We will become the global market leader of real-time mobile FPS multiplayer games with the largest FPS eSports community in the world\". This talk tells you what has been done in the past year, what has been achieved so far and what does the future looks like in the competitive mobile FPS gaming!"
+    },
+    {
+      "location_key": "stage",
+      "name": "ASUS ROG Summer 2016 CS:GO Semifinal 1",
+      "url": "http://asusrogtournament.com/",
+      "start_time": "2016-08-06T12:00+0300",
+      "description_fi": "Stream: http://tournaments.peliliiga.fi/summer16/streams",
+      "original_start_time": "2016-08-06T12:00+0300",
+      "flags": [
+        "major",
+        "bigscreen",
+        "onsite"
+      ],
+      "end_time": "2016-08-06T14:45+0300",
+      "key": "asms16-303",
+      "name_fi": "ASUS ROG Summer 2016 CS:GO Semifinaali 1",
+      "categories": [
+        "Game",
+        "Semifinals"
+      ],
+      "description": "Stream: http://tournaments.peliliiga.fi/summer16/streams"
+    },
+    {
+      "location_key": "own_place",
+      "name": "CS:GO BYOC Premium Playoffs",
+      "url": "http://tournaments.peliliiga.fi/summer16/tournaments/view/cs-go-byoc-premium",
+      "start_time": "2016-08-06T12:00+0300",
+      "original_start_time": "2016-08-06T12:00+0300",
+      "flags": [
+
+      ],
+      "end_time": "2016-08-06T12:00+0300",
+      "key": "asms16-337",
+      "name_fi": "CS:GO BYOC Premium Pudotuspelit",
+      "categories": [
+        "Game"
+      ]
+    },
+    {
+      "location_key": "own_place",
+      "name": "CS:GO BYOC Casual Playoffs",
+      "url": "http://tournaments.peliliiga.fi/summer16/tournaments/view/cs-go-byoc-casual",
+      "start_time": "2016-08-06T12:00+0300",
+      "original_start_time": "2016-08-06T12:00+0300",
+      "flags": [
+
+      ],
+      "end_time": "2016-08-06T12:00+0300",
+      "key": "asms16-341",
+      "name_fi": "CS:GO BYOC Casual Pudotuspelit",
+      "categories": [
+        "Game"
+      ]
+    },
+    {
+      "location_key": "infodesk",
+      "name": "1k intro jury - come to Infodesk",
+      "url": "http://www.assembly.org/demoscene/real-time/",
+      "start_time": "2016-08-06T12:00+0300",
+      "original_start_time": "2016-08-06T12:00+0300",
+      "flags": [
+        "onsite"
+      ],
+      "end_time": "2016-08-06T13:00+0300",
+      "key": "asms16-466",
+      "name_fi": "1k intro -kompon jury - tule Infodeskille",
+      "categories": [
+        "Compo",
+        "Jury"
+      ]
+    },
+    {
+      "location_key": "seminar",
+      "name": "ARTtech seminar: Sampsa Kuha: TRIAL AND ERROR - lessons learned developing for GearVR",
+      "url": "http://www.assembly.org/program/arttech-seminar/sessions/#kuha",
+      "start_time": "2016-08-06T12:00+0300",
+      "description_fi": "In 2015 mobile virtual reality took a big step forward with GearVR. Guidelines for creating content on this platform underlined keeping everything as simple as possible. How about doing the opposite? This talk tells about challenges faced while keeping framerate up and polycount down.  What are the biggest limitations? What can be done to bypass them and what remains still to be achieved.",
+      "original_start_time": "2016-08-06T12:00+0300",
+      "flags": [
+        "onsite"
+      ],
+      "end_time": "2016-08-06T12:45+0300",
+      "key": "asms16-512",
+      "name_fi": "ARTtech-seminaari: Sampsa Kuha: TRIAL AND ERROR - lessons learned developing for GearVR",
+      "categories": [
+        "Event",
+        "Seminar"
+      ],
+      "description": "In 2015 mobile virtual reality took a big step forward with GearVR. Guidelines for creating content on this platform underlined keeping everything as simple as possible. How about doing the opposite? This talk tells about challenges faced while keeping framerate up and polycount down.  What are the biggest limitations? What can be done to bypass them and what remains still to be achieved."
+    },
+    {
+      "location_key": "activityarea",
+      "name": "Robosota qualifications",
+      "url": "http://www.assembly.org/summer16/program/robosota",
+      "start_time": "2016-08-06T12:00+0300",
+      "original_start_time": "2016-08-06T12:00+0300",
+      "flags": [
+        "onsite"
+      ],
+      "end_time": "2016-08-06T15:00+0300",
+      "key": "asms16-814",
+      "name_fi": "Robosota karsinnat",
+      "categories": [
+        "Event",
+        "Show"
+      ]
+    },
+    {
+      "location_key": "infodesk",
+      "name": "4k intro jury - come to Infodesk",
+      "url": "http://www.assembly.org/demoscene/real-time/",
+      "start_time": "2016-08-06T13:00+0300",
+      "original_start_time": "2016-08-06T13:00+0300",
+      "flags": [
+        "onsite"
+      ],
+      "end_time": "2016-08-06T14:00+0300",
+      "key": "asms16-471",
+      "name_fi": "4k intro -kompon jury - tule Infodeskille",
+      "categories": [
+        "Compo",
+        "Jury"
+      ]
+    },
+    {
+      "location_key": "seminar",
+      "name": "ARTtech seminar: Tuomas Karmakallio: All your retina are belong to us",
+      "url": "http://www.assembly.org/program/arttech-seminar/sessions/#karmakallio",
+      "start_time": "2016-08-06T13:00+0300",
+      "description_fi": "FIVR (Finnish Virtual Reality Association) started in 2014 and was officially registered in 2016, and acquired 250,000€ in funding to start building VR development hubs. A short roundup of how FIVR is growing from a small group of VR enthusiasts into a development incubator. In addition, we will go through some of the current usecases outside of videogaming and present some of the projects currently under development at the first VR Hub.",
+      "original_start_time": "2016-08-06T13:00+0300",
+      "flags": [
+        "onsite"
+      ],
+      "end_time": "2016-08-06T13:45+0300",
+      "key": "asms16-513",
+      "name_fi": "ARTtech-seminaari: Tuomas Karmakallio: All your retina are belong to us",
+      "categories": [
+        "Event",
+        "Seminar"
+      ],
+      "description": "FIVR (Finnish Virtual Reality Association) started in 2014 and was officially registered in 2016, and acquired 250,000€ in funding to start building VR development hubs. A short roundup of how FIVR is growing from a small group of VR enthusiasts into a development incubator. In addition, we will go through some of the current usecases outside of videogaming and present some of the projects currently under development at the first VR Hub."
+    },
+    {
+      "location_key": "activityarea",
+      "name": "Elisa Drone Racing",
+      "start_time": "2016-08-06T13:00+0300",
+      "original_start_time": "2016-08-06T13:00+0300",
+      "flags": [
+        "onsite"
+      ],
+      "end_time": "2016-08-06T13:45+0300",
+      "key": "asms16-808",
+      "name_fi": "Elisa Drone Racing",
+      "categories": [
+        "event"
+      ]
+    },
+    {
+      "location_key": "own_place",
+      "name": "StarCraft II BYOC #2 Sign-up ends & Check-in starts",
+      "url": "http://tournaments.peliliiga.fi/summer16/tournaments/view/starcraft-ii-byoc-2",
+      "start_time": "2016-08-06T14:00+0300",
+      "original_start_time": "2016-08-06T14:00+0300",
+      "flags": [
+
+      ],
+      "end_time": "2016-08-06T14:00+0300",
+      "key": "asms16-320",
+      "name_fi": "StarCraft II BYOC #2 Rekisteröinti loppuu & Ilmoittautuminen alkaa",
+      "categories": [
+        "Game"
+      ]
+    },
+    {
+      "location_key": "own_place",
+      "name": "Hearthstone BYOC #2 Sign-up ends & Check-in starts",
+      "url": "http://tournaments.peliliiga.fi/summer16/tournaments/view/hearthstone-byoc-2",
+      "start_time": "2016-08-06T14:00+0300",
+      "original_start_time": "2016-08-06T14:00+0300",
+      "flags": [
+
+      ],
+      "end_time": "2016-08-06T15:00+0300",
+      "key": "asms16-331",
+      "name_fi": "Hearthstone BYOC #2 Rekisteröinti loppuu & Ilmoittautuminen alkaa ",
+      "categories": [
+        "Game"
+      ]
+    },
+    {
+      "location_key": "infodesk",
+      "name": "Demo compo jury - come to InfoDesk",
+      "url": "http://www.assembly.org/demoscene/real-time/",
+      "start_time": "2016-08-06T14:00+0300",
+      "original_start_time": "2016-08-06T14:00+0300",
+      "flags": [
+        "onsite"
+      ],
+      "end_time": "2016-08-06T16:00+0300",
+      "key": "asms16-476",
+      "name_fi": "Demo-kompon jury - tule Infodeskille",
+      "categories": [
+        "Compo",
+        "Jury"
+      ]
+    },
+    {
+      "location_key": "seminar",
+      "name": "ARTtech seminar: Tuukka Takala: Staying Ahead of the Curve in VR",
+      "url": "http://www.assembly.org/program/arttech-seminar/sessions/#takala",
+      "start_time": "2016-08-06T14:00+0300",
+      "description_fi": "Virtual reality as a media is being shaped right now, and there are plenty of opportunities to influence the field, even for small developer teams. This talk is aimed at developers who want to be at the forefront of VR industry. We present an overview of the quickly evolving VR scene, and explore the likely future directions of VR hardware and software. Several important considerations regarding VR development are discussed, and different possibilities for making cultural and business impact are examined, with the main focus being in games and entertainment applications of VR.",
+      "original_start_time": "2016-08-06T14:00+0300",
+      "flags": [
+        "onsite"
+      ],
+      "end_time": "2016-08-06T14:45+0300",
+      "key": "asms16-514",
+      "name_fi": "ARTtech-seminaari: Tuukka Takala: Staying Ahead of the Curve in VR",
+      "categories": [
+        "Event",
+        "Seminar"
+      ],
+      "description": "Virtual reality as a media is being shaped right now, and there are plenty of opportunities to influence the field, even for small developer teams. This talk is aimed at developers who want to be at the forefront of VR industry. We present an overview of the quickly evolving VR scene, and explore the likely future directions of VR hardware and software. Several important considerations regarding VR development are discussed, and different possibilities for making cultural and business impact are examined, with the main focus being in games and entertainment applications of VR."
+    },
+    {
+      "location_key": "activityarea",
+      "name": "Elisa Drone Racing semifinals",
+      "start_time": "2016-08-06T14:15+0300",
+      "original_start_time": "2016-08-06T14:15+0300",
+      "flags": [
+        "onsite"
+      ],
+      "end_time": "2016-08-06T15:00+0300",
+      "key": "asms16-809",
+      "name_fi": "Elisa Drone Racing -semifinaali",
+      "categories": [
+        "event"
+      ]
+    },
+    {
+      "location_key": "stage",
+      "name": "ASUS ROG Summer 2016 CS:GO Semifinal 2",
+      "url": "http://asusrogtournament.com/",
+      "start_time": "2016-08-06T15:00+0300",
+      "description_fi": "Stream: http://tournaments.peliliiga.fi/summer16/streams",
+      "original_start_time": "2016-08-06T15:00+0300",
+      "flags": [
+        "major",
+        "bigscreen",
+        "onsite"
+      ],
+      "end_time": "2016-08-06T18:15+0300",
+      "key": "asms16-304",
+      "name_fi": "ASUS ROG Summer 2016 CS:GO -semifinaali 2",
+      "categories": [
+        "Game",
+        "Semifinals"
+      ],
+      "description": "Stream: http://tournaments.peliliiga.fi/summer16/streams"
+    },
+    {
+      "location_key": "own_place",
+      "name": "StarCraft II BYOC #2 Group stage",
+      "url": "http://tournaments.peliliiga.fi/summer16/tournaments/view/starcraft-ii-byoc-2",
+      "start_time": "2016-08-06T15:00+0300",
+      "original_start_time": "2016-08-06T15:00+0300",
+      "flags": [
+
+      ],
+      "end_time": "2016-08-06T18:00+0300",
+      "key": "asms16-321",
+      "name_fi": "StarCraft II BYOC #2 -lohkopelit",
+      "categories": [
+        "Game"
+      ]
+    },
+    {
+      "location_key": "own_place",
+      "name": "Hearthstone BYOC #2 Tournament",
+      "url": "http://tournaments.peliliiga.fi/summer16/tournaments/view/hearthstone-byoc-2",
+      "start_time": "2016-08-06T15:00+0300",
+      "original_start_time": "2016-08-06T15:00+0300",
+      "flags": [
+
+      ],
+      "end_time": "2016-08-06T15:00+0300",
+      "key": "asms16-332",
+      "name_fi": "Hearthstone BYOC #2 -turnaus",
+      "categories": [
+        "Game"
+      ]
+    },
+    {
+      "location_key": "seminar",
+      "name": "ARTtech seminar: Miro Vesterinen: Custom vertex normals & the \"Medium-poly\" workflow",
+      "url": "http://www.assembly.org/program/arttech-seminar/sessions/#vesterinen",
+      "start_time": "2016-08-06T15:00+0300",
+      "description_fi": "Editing vertex normals is a common technique used by 3D artists, but with increased processing power new workflows combining custom vertex normals and additional geo have become available. This talk explains basic theory behing custom vertex normals and also shows examples of how this technique can be used in production. This talk will be aimed for 3D artists of all level.",
+      "original_start_time": "2016-08-06T15:00+0300",
+      "flags": [
+        "onsite"
+      ],
+      "end_time": "2016-08-06T15:45+0300",
+      "key": "asms16-515",
+      "name_fi": "ARTtech-seminaari: Miro Vesterinen: Custom vertex normals & the \"Medium-poly\" workflow",
+      "categories": [
+        "Event",
+        "Seminar"
+      ],
+      "description": "Editing vertex normals is a common technique used by 3D artists, but with increased processing power new workflows combining custom vertex normals and additional geo have become available. This talk explains basic theory behing custom vertex normals and also shows examples of how this technique can be used in production. This talk will be aimed for 3D artists of all level."
+    },
+    {
+      "location_key": "activityarea",
+      "name": "Elisa Drone Racing final",
+      "start_time": "2016-08-06T15:00+0300",
+      "original_start_time": "2016-08-06T15:00+0300",
+      "flags": [
+        "onsite"
+      ],
+      "end_time": "2016-08-06T15:30+0300",
+      "key": "asms16-810",
+      "name_fi": "Elisa Drone Racing -finaali",
+      "categories": [
+        "event"
+      ]
+    },
+    {
+      "location_key": "activityarea",
+      "name": "Robosota finals",
+      "url": "http://www.assembly.org/summer16/program/robosota",
+      "start_time": "2016-08-06T15:30+0300",
+      "original_start_time": "2016-08-06T15:30+0300",
+      "flags": [
+        "onsite"
+      ],
+      "end_time": "2016-08-06T16:00+0300",
+      "key": "asms16-815",
+      "name_fi": "Robosota-finaali",
+      "categories": [
+        "Event",
+        "Show"
+      ]
+    },
+    {
+      "location_key": "iracing",
+      "name": "iRacing World Championship Grand Prix Series - Indianapolis",
+      "start_time": "2016-08-06T16:00+0300",
+      "description_fi": "Stream: https://www.twitch.tv/fsrc",
+      "original_start_time": "2016-08-06T16:00+0300",
+      "flags": [
+        "onsite"
+      ],
+      "end_time": "2016-08-06T19:00+0300",
+      "key": "asms16-314",
+      "name_fi": "iRacing World Championship Grand Prix Series - Indianapoliksen osakilpailu",
+      "categories": [
+        "Game"
+      ],
+      "description": "Stream: https://www.twitch.tv/fsrc"
+    },
+    {
+      "location_key": "seminar",
+      "name": "ARTtech seminar: Jere Sanisalo: Modern GPU particle systems in Alienation (PS4)",
+      "url": "http://www.assembly.org/program/arttech-seminar/sessions/#sanisalo",
+      "start_time": "2016-08-06T16:00+0300",
+      "description_fi": "Particle systems are used to create great visual effects in most modern games. GPU compute based solutions offer a lot more power than the previous CPU based efforts. This talk focuses on the particle system created for the Alienation game (PS4, 2016, Sony Interactive Entertainment). The focus is on the technical aspects of the system and how almost all of the work was moved to GPU while actually making the system a lot more flexible and scalable.",
+      "original_start_time": "2016-08-06T16:00+0300",
+      "flags": [
+        "onsite"
+      ],
+      "end_time": "2016-08-06T16:45+0300",
+      "key": "asms16-516",
+      "name_fi": "ARTtech-seminaari: Jere Sanisalo: Modern GPU particle systems in Alienation (PS4)",
+      "categories": [
+        "Event",
+        "Seminar"
+      ],
+      "description": "Particle systems are used to create great visual effects in most modern games. GPU compute based solutions offer a lot more power than the previous CPU based efforts. This talk focuses on the particle system created for the Alienation game (PS4, 2016, Sony Interactive Entertainment). The focus is on the technical aspects of the system and how almost all of the work was moved to GPU while actually making the system a lot more flexible and scalable."
+    },
+    {
+      "location_key": "seminar",
+      "name": "ARTtech seminar: Tatu Aalto: Rendering Quantum Break",
+      "url": "http://www.assembly.org/program/arttech-seminar/sessions/#aalto",
+      "start_time": "2016-08-06T17:00+0300",
+      "description_fi": "Quantum Break is a third person action game released early 2016 and is built up by technology developed at Remedy. In this talk we will go over the rendering stages in Quantum Break on high level. The presentation will give you an idea of what is needed for drawing a frame in game.",
+      "original_start_time": "2016-08-06T17:00+0300",
+      "flags": [
+        "onsite"
+      ],
+      "end_time": "2016-08-06T17:45+0300",
+      "key": "asms16-517",
+      "name_fi": "ARTtech-seminaari: Tatu Aalto: Rendering Quantum Break",
+      "categories": [
+        "Event",
+        "Seminar"
+      ],
+      "description": "Quantum Break is a third person action game released early 2016 and is built up by technology developed at Remedy. In this talk we will go over the rendering stages in Quantum Break on high level. The presentation will give you an idea of what is needed for drawing a frame in game."
+    },
+    {
+      "location_key": "own_place",
+      "name": "StarCraft II BYOC #2 Playoffs",
+      "url": "http://tournaments.peliliiga.fi/summer16/tournaments/view/starcraft-ii-byoc-2",
+      "start_time": "2016-08-06T18:00+0300",
+      "original_start_time": "2016-08-06T18:00+0300",
+      "flags": [
+
+      ],
+      "end_time": "2016-08-06T22:00+0300",
+      "key": "asms16-322",
+      "name_fi": "StarCraft II BYOC #2 -pudotuspelit",
+      "categories": [
+        "Game"
+      ]
+    },
+    {
+      "location_key": "seminar",
+      "name": "ARTtech seminar: Timo Heinäpurola: Mobile Game Engine Development at Reforged Studios",
+      "url": "http://www.assembly.org/program/arttech-seminar/sessions/#heinapurola",
+      "start_time": "2016-08-06T18:00+0300",
+      "description_fi": "In this talk I present how we develop our custom mobile game engine at Reforged Studios. I will outline the reasons why we decided to start developing our own game engine instead of licensing one. The rest of the talk will focus on the principles governing our development process and software architecture. This includes methods such as data oriented design, the KISS principle, platform independent build definition and automated testing.",
+      "original_start_time": "2016-08-06T18:00+0300",
+      "flags": [
+        "onsite"
+      ],
+      "end_time": "2016-08-06T18:45+0300",
+      "key": "asms16-518",
+      "name_fi": "ARTtech-seminaari: Timo Heinäpurola: Mobile Game Engine Development at Reforged Studios",
+      "categories": [
+        "Event",
+        "Seminar"
+      ],
+      "description": "In this talk I present how we develop our custom mobile game engine at Reforged Studios. I will outline the reasons why we decided to start developing our own game engine instead of licensing one. The rest of the talk will focus on the principles governing our development process and software architecture. This includes methods such as data oriented design, the KISS principle, platform independent build definition and automated testing."
+    },
+    {
+      "location_key": "stage",
+      "name": "Price ceremony #1",
+      "start_time": "2016-08-06T18:15+0300",
+      "original_start_time": "2016-08-06T18:15+0300",
+      "flags": [
+        "major",
+        "bigscreen"
+      ],
+      "end_time": "2016-08-06T19:00+0300",
+      "key": "asms16-704",
+      "name_fi": "Palkintojenjakoseremonia #1",
+      "categories": [
+        "Event",
+        "Ceremony"
+      ]
+    },
+    {
+      "location_key": "stage",
+      "name": "ASUS ROG Summer 2016 CS:GO Final",
+      "url": "http://asusrogtournament.com/",
+      "start_time": "2016-08-06T19:00+0300",
+      "description_fi": "25.000 dollaria. 8 ammattitiimiä. Äänekäs yleisö. Vain yksi voittaja. Kuka saa pokaalin tänä vuonna?\n\nStream: http://tournaments.peliliiga.fi/summer16/streams",
+      "original_start_time": "2016-08-06T19:00+0300",
+      "flags": [
+        "major",
+        "bigscreen",
+        "onsite"
+      ],
+      "end_time": "2016-08-06T22:30+0300",
+      "key": "asms16-305",
+      "name_fi": "ASUS ROG Summer 2016 CS:GO -finaali",
+      "categories": [
+        "Game",
+        "Finals"
+      ],
+      "description": "25.000 dollars. 8 professional teams. Loud crowd. One winner. Who will take the cup this year?\n\nStream: http://tournaments.peliliiga.fi/summer16/streams"
+    },
+    {
+      "location_key": "seminar",
+      "name": "ARTtech seminar: Joona Heinikoski: Tools for creating successful  alien invasion",
+      "url": "http://www.assembly.org/summer16/program/arttech-seminar/sessions/#heinikoski",
+      "start_time": "2016-08-06T19:00+0300",
+      "description_fi": "Housemarque has a long tradition of creating state-of-the-art tech for their games. To harness the power of the tech, you need tools that are up to the task. Get a behind the scenes tour to see what kind of tools enabled developers at Housemarque to create their latest game, Alienation. This presentation is intended for people who are interested in how games are created and for other developers who are building a toolset for their next game.",
+      "original_start_time": "2016-08-06T19:00+0300",
+      "flags": [
+        "onsite"
+      ],
+      "end_time": "2016-08-06T20:00+0300",
+      "key": "asms16-sem-519",
+      "name_fi": "ARTtech-seminaari: Joona Heinikoski: Tools for creating successful  alien invasion",
+      "categories": [
+        "Event",
+        "Seminar"
+      ],
+      "description": "Housemarque has a long tradition of creating state-of-the-art tech for their games. To harness the power of the tech, you need tools that are up to the task. Get a behind the scenes tour to see what kind of tools enabled developers at Housemarque to create their latest game, Alienation. This presentation is intended for people who are interested in how games are created and for other developers who are building a toolset for their next game."
+    },
+    {
+      "location_key": "iracing",
+      "name": "eSM Ovaali 2016 Finals",
+      "url": "http://simracing.fi/uutiset/sim-racing-esm-ovaalin-sm-2016",
+      "start_time": "2016-08-06T20:00+0300",
+      "description_fi": "Stream URL: https://www.twitch.tv/fsrc",
+      "original_start_time": "2016-08-06T20:00+0300",
+      "flags": [
+        "major",
+        "onsite"
+      ],
+      "end_time": "2016-08-07T00:00+0300",
+      "key": "asms16-315",
+      "name_fi": "eSM Ovaali 2016 -finaali",
+      "categories": [
+        "Game",
+        "Finals"
+      ],
+      "description": "Stream URL: https://www.twitch.tv/fsrc"
+    },
+    {
+      "location_key": "seminar",
+      "name": "ARTtech seminar: G2A",
+      "url": "http://www.assembly.org/summer16/program/arttech-seminar/",
+      "start_time": "2016-08-06T20:00+0300",
+      "original_start_time": "2016-08-06T20:00+0300",
+      "flags": [
+        "onsite"
+      ],
+      "end_time": "2016-08-06T21:00+0300",
+      "key": "asms16-sem-520",
+      "name_fi": "ARTtech-seminaari: G2A",
+      "categories": [
+        "Event",
+        "Seminar"
+      ]
+    },
+    {
+      "location_key": "seminar",
+      "name": "ARTtech seminar: AMD",
+      "url": "http://www.assembly.org/summer16/program/arttech-seminar/",
+      "start_time": "2016-08-06T21:00+0300",
+      "original_start_time": "2016-08-06T21:00+0300",
+      "flags": [
+        "onsite"
+      ],
+      "end_time": "2016-08-06T22:00+0300",
+      "key": "asms16-sem-521",
+      "name_fi": "ARTtech-seminaari: AMD",
+      "categories": [
+        "Event",
+        "Seminar"
+      ]
+    },
+    {
+      "location_key": "screen",
+      "name": "1k intro compo",
+      "url": "http://www.assembly.org/demoscene/real-time/",
+      "start_time": "2016-08-06T22:30+0300",
+      "description_fi": "1k intro -kompo on ohjelmoijien kilpailu, jonka tarkoituksena on esitellä silkkaa yhden tai useamman koodaajan ohjelmointitaitoa. Teknologian edistyessä 4k introista tulee yhä monimutkaisempia tiimituotoksia, ja siksi 1k intro -kompo korjaa 4k:n jättämän tyhjiön kilpailuna, jossa ohjelmoija on yksilötaiteilija, etualalla.",
+      "original_start_time": "2016-08-06T22:30+0300",
+      "flags": [
+        "major",
+        "bigscreen"
+      ],
+      "end_time": "2016-08-06T23:00+0300",
+      "key": "asms16-467",
+      "name_fi": "1k intro -kompo",
+      "categories": [
+        "Compo",
+        "Show"
+      ],
+      "description": "The 1k intro competition is the programmer's competition. Intended to showcase solely the sheer programming brilliance of one or more coders, this competition takes place the 4k intro used to have. As technology progresses, 4k intros become increasingly complex, often team productions, so the 1k intro competition intends to bring the programmer back to the front as a solo artist."
+    },
+    {
+      "location_key": "screen",
+      "name": "4k intro compo",
+      "url": "http://www.assembly.org/demoscene/real-time/",
+      "start_time": "2016-08-06T23:00+0300",
+      "description_fi": "4k intro-kompossa kilpailijoiden tulee esittää kokonaisuudessaan korkeintaan neljän kilotavun ajettava ohjelma. Tämän rajoituksen täyttäminen vaatii tarkkaa tietoa CPU:sta ja grafiikkalaitteistosta, käyttöjärjestelmästä ja muista kirjastoista, minkäänlaisen lopputuloksen aikaansaamiseksi. Älä anna muihin kompoihin verrattuna rajoitetun äänen ja kuvan hämätä - jokainen 4k-kompoon osallistuva teos on taidonnäyte.",
+      "original_start_time": "2016-08-06T23:00+0300",
+      "flags": [
+        "major",
+        "bigscreen"
+      ],
+      "end_time": "2016-08-06T23:30+0300",
+      "key": "asms16-472",
+      "name_fi": "4k intro -kompo",
+      "categories": [
+        "Compo",
+        "Show"
+      ],
+      "description": "The 4k competition requires participants to deliver a running executable of at most 4 kilobytes in size that will contain all the program and data. This limitation requires intricate knowledge about the CPU and graphics hardware, the operating system and other libraries in order to achieve anything at all. Do not let yourself be fooled by the limited sounds and graphics compared to the demo productions - each 4k entry is a little piece of magic."
+    },
+    {
+      "location_key": "screen",
+      "name": "Compostudio: 1k & 4k intro",
+      "url": "http://www.assembly.org/program/assemblytv",
+      "start_time": "2016-08-06T23:30+0300",
+      "original_start_time": "2016-08-06T23:30+0300",
+      "flags": [
+        "bigscreen"
+      ],
+      "end_time": "2016-08-07T00:00+0300",
+      "key": "asms16-473",
+      "name_fi": "Kompostudio: 1k & 4k intro",
+      "categories": [
+        "Stream",
+        "Studio"
+      ]
+    },
+    {
+      "location_key": "screen",
+      "name": "Demo compo",
+      "url": "http://www.assembly.org/demoscene/real-time/",
+      "start_time": "2016-08-07T00:00+0300",
+      "description_fi": "Demokompo on ASSEMBLYn päätapahtuma. Rajoituksia ei ole, ja kilpailijat pyrkivät aina vain parempaan, aseinaan luovuus, taidot ja nykyaikaisin tietokonelaitteisto. Lopputulokset vaihtelevat fantastis-surrealistisista esityksistä nopeisiin ja voimakkaisiin vuoristoratoihin, sekä monimutkaisiin tarinoihin. Valmistaudu siis järisyttävään kokemukseen. Kaikki tässä kategoriassa pyrkii täydellisyyteen ja korkeimpaan laatuun: animaatioista ja renderöinnista musiikkiin, ääniin, väreihin, tunteisiin ja tarinaan.",
+      "original_start_time": "2016-08-07T00:00+0300",
+      "flags": [
+        "major",
+        "bigscreen"
+      ],
+      "end_time": "2016-08-07T01:00+0300",
+      "key": "asms16-477",
+      "name_fi": "Demo-kompo",
+      "categories": [
+        "Compo",
+        "Show"
+      ],
+      "description": "The Demo competition is the main event of ASSEMBLY. The limits are gone and teams are pursuing the state of the art armed with their creativity, talents, and the latest computing power. Ranging from phantasmagorical, surreal creations to pumping high energy roller coaster rides and onto complex stories, be prepared to experience anything. Everything in this category is pushed to the highest level of quality: from animations and rendering to music, sounds, colors, emotions, and story."
+    },
+    {
+      "location_key": "screen",
+      "name": "Compostudio: Demo",
+      "url": "http://www.assembly.org/program/assemblytv",
+      "start_time": "2016-08-07T01:00+0300",
+      "original_start_time": "2016-08-07T01:00+0300",
+      "flags": [
+        "bigscreen"
+      ],
+      "end_time": "2016-08-07T01:45+0300",
+      "key": "asms16-478",
+      "name_fi": "Kompostudio: Demo",
+      "categories": [
+        "Stream",
+        "Studio"
+      ]
+    },
+    {
+      "location_key": "stage",
+      "name": "Price ceremony #2",
+      "start_time": "2016-08-07T13:00+0300",
+      "original_start_time": "2016-08-07T13:00+0300",
+      "flags": [
+        "major",
+        "bigscreen"
+      ],
+      "end_time": "2016-08-07T14:00+0300",
+      "key": "asms16-705",
+      "name_fi": "Palkintojenjakoseremonia #2",
+      "categories": [
+        "Event",
+        "Ceremony"
+      ]
+    },
+    {
+      "location_key": "all_areas",
+      "name": "Lights go on",
+      "start_time": "2016-08-07T14:30+0300",
+      "original_start_time": "2016-08-07T14:30+0300",
+      "flags": [
+        "major"
+      ],
+      "end_time": "2016-08-07T14:30+0300",
+      "key": "asms16-901",
+      "name_fi": "Valot päälle",
+      "categories": [
+        "Event"
+      ]
+    },
+    {
+      "location_key": "all_areas",
+      "name": "Party network goes down",
+      "start_time": "2016-08-07T15:00+0300",
+      "original_start_time": "2016-08-07T15:00+0300",
+      "flags": [
+        "major"
+      ],
+      "end_time": "2016-08-07T15:00+0300",
+      "key": "asms16-902",
+      "name_fi": "Partyverkko pois päältä",
+      "categories": [
+        "Event"
+      ]
+    },
+    {
+      "location_key": "all_areas",
+      "name": "Electricity is cut",
+      "start_time": "2016-08-07T15:00+0300",
+      "original_start_time": "2016-08-07T15:00+0300",
+      "flags": [
+        "major"
+      ],
+      "end_time": "2016-08-07T15:00+0300",
+      "key": "asms16-903",
+      "name_fi": "Sähköt pois päältä",
+      "categories": [
+        "Event"
+      ]
+    },
+    {
+      "location_key": "all_areas",
+      "name": "ASSEMBLY Summer 2016 is over - see you Winter 2017!",
+      "start_time": "2016-08-07T16:00+0300",
+      "original_start_time": "2016-08-07T16:00+0300",
+      "flags": [
+        "major",
+        "onsite"
+      ],
+      "end_time": "2016-08-07T16:00+0300",
+      "key": "asms16-905",
+      "name_fi": "ASSEMBLY Summer 2016 on ohi - nähdään Winter 2017:llä!",
+      "categories": [
+        "Event"
+      ]
+    }
+  ]
+}
