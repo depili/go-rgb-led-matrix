@@ -3,13 +3,17 @@ package assembly
 import (
 	"encoding/json"
 	"fmt"
+	"io/ioutil"
+	"log"
+	"net/http"
+	"sort"
 	"time"
 )
 
-type schedule struct {
+type Schedule struct {
 	Locations  map[string]location `json:"locations"`
-	Events     []event             `json:"events"`
-	Event_keys map[string]event
+	Events     events              `json:"events"`
+	Event_keys map[string]Event
 }
 
 type location struct {
@@ -18,7 +22,7 @@ type location struct {
 	Name    string `json:"name"`
 }
 
-type event struct {
+type Event struct {
 	Location_key        string       `json:"locations_key"`
 	Name                string       `json:"name"`
 	Start_time          AssemblyTime `json:"start_time"`
@@ -30,43 +34,45 @@ type event struct {
 	Categories          []string     `json:"categories"`
 }
 
-func ParseSchedule(data []byte) *schedule {
-	var sched schedule
+type events []Event
+
+func (slice events) Len() int {
+	return len(slice)
+}
+
+func (slice events) Less(i, j int) bool {
+	return slice[i].Start_time.Before(slice[j].Start_time.Time)
+}
+
+func (slice events) Swap(i, j int) {
+	slice[i], slice[j] = slice[j], slice[i]
+}
+
+func ParseSchedule(data []byte) *Schedule {
+	var sched Schedule
 	if err := json.Unmarshal(data, &sched); err != nil {
 		panic(err)
 	}
-	sched.Event_keys = make(map[string]event)
+	sched.Event_keys = make(map[string]Event)
 	for _, ev := range sched.Events {
 		sched.Event_keys[ev.Key] = ev
 	}
+	sort.Sort(sched.Events)
 
 	return &sched
 }
 
-func (sched *schedule) NextEvent(t time.Time, flag string) event {
-	var ret event
+func (sched *Schedule) NextEvent(t time.Time, flag string) (Event, bool) {
 	for _, ev := range sched.Events {
 		if ev.HasFlag(flag) && ev.Start_time.After(t) {
-			ret = ev
-			break
+			return ev, true
 		}
 	}
-	if ret.Name == "" {
-		panic("no event found with the flag!")
-	}
-
-	for _, ev := range sched.Events {
-		if ev.HasFlag(flag) {
-			if ev.Start_time.After(t) && ev.Start_time.Before(ret.Start_time.Time) {
-				ret = ev
-			}
-		}
-	}
-
-	return ret
+	var ret Event
+	return ret, false
 }
 
-func (ev *event) HasFlag(flag string) bool {
+func (ev *Event) HasFlag(flag string) bool {
 	for _, f := range ev.Flags {
 		if f == flag {
 			return true
@@ -75,13 +81,17 @@ func (ev *event) HasFlag(flag string) bool {
 	return false
 }
 
-func (ev *event) String() string {
+func (ev *Event) Equal(otherEvent Event) bool {
+	return ev.Key == otherEvent.Key
+}
+
+func (ev *Event) String() string {
 	return fmt.Sprintf("Event: \t%s\n\tStarts: %s\n\tEnds: %s\n\tDuration: %s\n",
 		ev.Name, ev.Start_time.String(), ev.End_time.String(),
 		ev.End_time.Sub(ev.Start_time.Time).String())
 }
 
-func (ev *event) TimeToGo(t time.Time) (string, bool) {
+func (ev *Event) TimeToGo(t time.Time) (string, bool) {
 	ttg := ev.Start_time.Sub(t)
 	if ev.Start_time.After(t) {
 		return fmt.Sprintf("T-%2.f:%02d:%02d",
@@ -89,5 +99,25 @@ func (ev *event) TimeToGo(t time.Time) (string, bool) {
 	} else {
 		return fmt.Sprintf("T+%02.f:%02d:%02d",
 			-ttg.Hours(), -int(ttg.Minutes())%60, -int(ttg.Seconds())%60), true
+	}
+}
+
+func ScheduleWorker(url string, schedChan chan *Schedule, shutdown chan bool) {
+	for {
+		select {
+		case <-shutdown:
+			return
+		default:
+			resp, err := http.Get(url)
+			if err != nil {
+				log.Printf("Error fetching schedule data from url: %s", url)
+			} else {
+				body, _ := ioutil.ReadAll(resp.Body)
+				sched := ParseSchedule(body)
+				schedChan <- sched
+			}
+			resp.Body.Close()
+			time.Sleep(5 * time.Minute)
+		}
 	}
 }
