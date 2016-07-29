@@ -6,6 +6,8 @@ import (
 	"github.com/depili/go-rgb-led-matrix/bdf"
 	"github.com/depili/go-rgb-led-matrix/matrix"
 	"io/ioutil"
+	"os"
+	"os/signal"
 	"time"
 )
 
@@ -52,6 +54,9 @@ func main() {
 	clockX := 127 - (8 * smallFont.Width)
 	ttgLength := clockX - 5
 
+	sigChan := make(chan os.Signal, 1)
+	signal.Notify(sigChan, os.Interrupt)
+
 	for {
 		select {
 		case sched = <-schedChan:
@@ -88,6 +93,11 @@ func main() {
 			}
 			m.Send()
 			i++
+
+		case <-sigChan:
+			m.Close()
+			shutdown <- true
+			os.Exit(1)
 		}
 	}
 }
