@@ -95,10 +95,10 @@ func (ev *Event) TimeToGo(t time.Time) (string, bool) {
 	ttg := ev.Start_time.Sub(t)
 	if ev.Start_time.After(t) {
 		return fmt.Sprintf("T-%2.f:%02d:%02d",
-			ttg.Hours(), int(ttg.Minutes())%60, int(ttg.Seconds())%60), false
+			ttg.Hours(), int(ttg.Minutes())%60, int((ttg.Seconds())+1)%60), false
 	} else {
 		return fmt.Sprintf("T+%02.f:%02d:%02d",
-			-ttg.Hours(), -int(ttg.Minutes())%60, -int(ttg.Seconds())%60), true
+			-ttg.Hours(), -int(ttg.Minutes())%60, -int((ttg.Seconds())+1)%60), true
 	}
 }
 
