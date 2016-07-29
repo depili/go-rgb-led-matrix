@@ -103,21 +103,26 @@ func (ev *Event) TimeToGo(t time.Time) (string, bool) {
 }
 
 func ScheduleWorker(url string, schedChan chan *Schedule, shutdown chan bool) {
+	fetchSchedule(url, schedChan)
+	updateTicker := time.NewTicker(time.Minute * 5)
 	for {
 		select {
 		case <-shutdown:
 			return
-		default:
-			resp, err := http.Get(url)
-			if err != nil {
-				log.Printf("Error fetching schedule data from url: %s", url)
-			} else {
-				body, _ := ioutil.ReadAll(resp.Body)
-				sched := ParseSchedule(body)
-				schedChan <- sched
-			}
-			resp.Body.Close()
-			time.Sleep(5 * time.Minute)
+		case <-updateTicker.C:
+			fetchSchedule(url, schedChan)
 		}
 	}
+}
+
+func fetchSchedule(url string, schedChan chan *Schedule) {
+	resp, err := http.Get(url)
+	if err != nil {
+		log.Printf("Error fetching schedule data from url: %s", url)
+	} else {
+		body, _ := ioutil.ReadAll(resp.Body)
+		sched := ParseSchedule(body)
+		schedChan <- sched
+	}
+	resp.Body.Close()
 }
