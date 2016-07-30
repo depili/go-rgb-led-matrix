@@ -71,6 +71,7 @@ func main() {
 
 	m.InitFlame()
 	for i := 0; i < 1000; i++ {
+		m.FlameSeed()
 		m.FlameFill()
 		m.Send()
 		time.Sleep(10 * time.Millisecond)
