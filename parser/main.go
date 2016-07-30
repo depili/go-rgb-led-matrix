@@ -45,58 +45,79 @@ func main() {
 	defer m.Close()
 
 	m.Fill(matrix.ColorBlack())
-
+	// Start schedule updater go routine
 	go assembly.ScheduleWorker(url, schedChan, shutdown)
+
 	var sched *assembly.Schedule
 	var ev assembly.Event
+
+	// Colors
 	errorColor := [3]byte{0, 255, 255}   // cyan
 	pastColor := [3]byte{217, 28, 227}   // pink-ish
 	futureColor := [3]byte{28, 227, 190} // Turquise-ish
 	fuseColor := [3]byte{74, 35, 17}     // dark brown
+
+	// Initial bitmaps
 	errorBitmap := font.TextBitmap("Schedule not imported yet.. waiting...  ")
 	evBitmap := font.TextBitmap("Event name")
 	ttgBitmap := smallFont.TextBitmap("123")
-	ttg := "123"
 	clockBitmap := smallFont.TextBitmap("15:04:05")
+
+	// Build intial flame effect bitmaps and palette
+	m.InitFlame()
+
+	// Status variables
+	ttg := "123"
 	inPast := false
 	haveSched := false
 	haveEvent := false
 	minutesToGo := float64(32)
 	step := 0
+
+	// Initialize tickers for various tasks
 	eventTicker := time.NewTicker(time.Millisecond * 100)
 	scrollTicker := time.NewTicker(time.Millisecond * 10)
+
+	// Time to show past events for
 	delta, _ := time.ParseDuration("-15m")
+
+	// Lengths for the clocks
 	clockX := 127 - (8 * smallFont.Width)
 	ttgLength := clockX - 5
 
+	// Trap SIGINT aka Ctrl-C
 	sigChan := make(chan os.Signal, 1)
 	signal.Notify(sigChan, os.Interrupt)
-	m.InitFlame()
 
+	// Main message loop
 	for {
 		select {
-		case sched = <-schedChan:
+		case sched = <-schedChan: // Schedule update one per 5min
 			fmt.Printf("New schedule parsed! Events: %d\n", len(sched.Events))
 			haveSched = true
-		case <-eventTicker.C:
+		case <-eventTicker.C: // Check for the current event
 			if haveSched {
 				if e, found := sched.NextEvent(time.Now().Add(delta), "bigscreen"); found {
 					haveEvent = true
 					ev = e
+					// Generate bitmaps
 					evBitmap = font.TextBitmap(fmt.Sprintf("%s  ", ev.Name))
 					ttg, inPast = ev.TimeToGo(time.Now())
 					ttgBitmap = smallFont.TextBitmap(ttg)
+					clockBitmap = smallFont.TextBitmap(time.Now().Format("15:04:05"))
 
+					// Calculate minutes till the event
+					minutesToGo = ev.Start_time.Sub(time.Now()).Minutes()
+					minutesToGo -= float64(int(minutesToGo)/32) * 32 // Debug
 				} else {
+					// No event found
 					haveEvent = false
 				}
-				clockBitmap = smallFont.TextBitmap(time.Now().Format("15:04:05"))
-				minutesToGo = ev.Start_time.Sub(time.Now()).Minutes()
-				minutesToGo -= float64(int(minutesToGo)/32) * 32
 			}
-		case <-scrollTicker.C:
+		case <-scrollTicker.C: // Advance animations
 			if haveSched && haveEvent {
 				m.Fill(matrix.ColorBlack())
+				// Burning fuse showing last 32min prior to event
 				if minutesToGo <= 31.5 && minutesToGo > 0 {
 					for i := 0; i < 128; i++ {
 						m.FlameClear(29, i)
@@ -116,14 +137,19 @@ func main() {
 					m.SetPixel(30, i, fuseColor)
 					m.SetPixel(31, i, fuseColor)
 				}
+
+				// Scroll the event name
 				m.Scroll(evBitmap, matrix.ColorWhite(), 0, 0, step/2, 128)
+
+				// T±12:04:05 output, set color based on ±
 				if inPast {
 					m.Scroll(ttgBitmap, pastColor, 16, 0, 0, ttgLength)
 				} else {
 					m.Scroll(ttgBitmap, futureColor, 16, 0, 0, ttgLength)
 				}
-				m.ScrollPlasma(clockBitmap, 16, clockX, step/5, 56)
 
+				// Clock
+				m.ScrollPlasma(clockBitmap, 16, clockX, step/5, 56)
 			} else {
 				// Schedule not loaded yet
 				m.Fill(errorColor)
@@ -133,6 +159,7 @@ func main() {
 			step++
 
 		case <-sigChan:
+			// SIGINT received, shutdown gracefully
 			m.Close()
 			shutdown <- true
 			os.Exit(1)
