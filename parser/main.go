@@ -39,6 +39,7 @@ func main() {
 	errorColor := [3]byte{0, 255, 255}   // cyan
 	pastColor := [3]byte{217, 28, 227}   // pink-ish
 	futureColor := [3]byte{28, 227, 190} // Turquise-ish
+	fuseColor := [3]byte{74, 35, 17}     // dark brown
 	errorBitmap := font.TextBitmap("Schedule not imported yet.. waiting...  ")
 	evBitmap := font.TextBitmap("Event name")
 	ttgBitmap := smallFont.TextBitmap("123")
@@ -47,7 +48,8 @@ func main() {
 	inPast := false
 	haveSched := false
 	haveEvent := false
-	i := 0
+	minutesToGo := float64(32)
+	step := 0
 	eventTicker := time.NewTicker(time.Millisecond * 100)
 	scrollTicker := time.NewTicker(time.Millisecond * 10)
 	delta, _ := time.ParseDuration("-15m")
@@ -56,6 +58,7 @@ func main() {
 
 	sigChan := make(chan os.Signal, 1)
 	signal.Notify(sigChan, os.Interrupt)
+	m.InitFlame()
 
 	for {
 		select {
@@ -70,29 +73,51 @@ func main() {
 					evBitmap = font.TextBitmap(fmt.Sprintf("%s  ", ev.Name))
 					ttg, inPast = ev.TimeToGo(time.Now())
 					ttgBitmap = smallFont.TextBitmap(ttg)
+
 				} else {
 					haveEvent = false
 				}
 				clockBitmap = smallFont.TextBitmap(time.Now().Format("15:04:05"))
+				minutesToGo = ev.Start_time.Sub(time.Now()).Minutes()
+				// minutesToGo -= float64(int(minutesToGo)/32) * 32
 			}
 		case <-scrollTicker.C:
 			if haveSched && haveEvent {
 				m.Fill(matrix.ColorBlack())
-				m.Scroll(evBitmap, matrix.ColorWhite(), 0, 0, i/2, 128)
-				if inPast {
-					m.Scroll(ttgBitmap, pastColor, 21, 0, 0, ttgLength)
-				} else {
-					m.Scroll(ttgBitmap, futureColor, 21, 0, 0, ttgLength)
+				if minutesToGo <= 31.5 && minutesToGo > 0 {
+					for i := 0; i < 128; i++ {
+						m.FlameClear(29, i)
+						m.FlameClear(30, i)
+						m.FlameClear(31, i)
+					}
+					for i := int(((32 - minutesToGo) * 4)); i > int(((32 - minutesToGo - 1) * 4)); i-- {
+						m.FlameSet(29, i)
+						m.FlameSet(30, i)
+						m.FlameSet(31, i)
+					}
 				}
-				m.ScrollPlasma(clockBitmap, 21, clockX, i/5, 56)
+				m.FlameFill()
+
+				for i := 127; i > int(((32 - minutesToGo) * 4)); i-- {
+					m.SetPixel(29, i, fuseColor)
+					m.SetPixel(30, i, fuseColor)
+					m.SetPixel(31, i, fuseColor)
+				}
+				m.Scroll(evBitmap, matrix.ColorWhite(), 0, 0, step/2, 128)
+				if inPast {
+					m.Scroll(ttgBitmap, pastColor, 16, 0, 0, ttgLength)
+				} else {
+					m.Scroll(ttgBitmap, futureColor, 16, 0, 0, ttgLength)
+				}
+				m.ScrollPlasma(clockBitmap, 16, clockX, step/5, 56)
 
 			} else {
 				// Schedule not loaded yet
 				m.Fill(errorColor)
-				m.Scroll(errorBitmap, matrix.ColorWhite(), 5, 0, i, 128)
+				m.Scroll(errorBitmap, matrix.ColorWhite(), 5, 0, step, 128)
 			}
 			m.Send()
-			i++
+			step++
 
 		case <-sigChan:
 			m.Close()
