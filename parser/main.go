@@ -5,30 +5,43 @@ import (
 	"github.com/depili/go-rgb-led-matrix/assembly"
 	"github.com/depili/go-rgb-led-matrix/bdf"
 	"github.com/depili/go-rgb-led-matrix/matrix"
+	"github.com/jessevdk/go-flags"
 	"io/ioutil"
 	"os"
 	"os/signal"
 	"time"
 )
 
-func main() {
+var Options struct {
+	SmallFont string `short:"f" long:"smallfont" description:"Font for clock and countdown" default:"fonts/6x10.bdf"`
+	Font      string `short:"F" long:"font" description:"Font for event name" default:"fonts/7x13B.bdf"`
+	Url       string `short:"u" long:"url" description:"Schedule url" default:"http://schedule.assembly.org/asms16/schedules/events.json"`
+	Matrix    string `short:"m" long:"matrix" description:"Matrix to connect to" required:"true"`
+}
 
-	url := "http://schedule.assembly.org/asms16/schedules/events.json"
+var parser = flags.NewParser(&Options, flags.Default)
+
+func main() {
+	if _, err := parser.Parse(); err != nil {
+		panic(err)
+	}
+
+	url := Options.Url
 	shutdown := make(chan bool)
 	schedChan := make(chan *assembly.Schedule)
 
-	font, err := bdf.Parse("fonts/7x13B.bdf")
+	font, err := bdf.Parse(Options.Font)
 	if err != nil {
 		panic(err)
 	}
-	smallFont, err := bdf.Parse("fonts/6x10.bdf")
+	smallFont, err := bdf.Parse(Options.SmallFont)
 	if err != nil {
 		panic(err)
 	}
 
 	fmt.Printf("Fonts loaded.\n")
 
-	m := matrix.Init("tcp://192.168.0.30:5555", 32, 128)
+	m := matrix.Init(Options.Matrix, 32, 128)
 	defer m.Close()
 
 	m.Fill(matrix.ColorBlack())
@@ -79,7 +92,7 @@ func main() {
 				}
 				clockBitmap = smallFont.TextBitmap(time.Now().Format("15:04:05"))
 				minutesToGo = ev.Start_time.Sub(time.Now()).Minutes()
-				// minutesToGo -= float64(int(minutesToGo)/32) * 32
+				minutesToGo -= float64(int(minutesToGo)/32) * 32
 			}
 		case <-scrollTicker.C:
 			if haveSched && haveEvent {
@@ -95,8 +108,8 @@ func main() {
 						m.FlameSet(30, i)
 						m.FlameSet(31, i)
 					}
+					m.FlameFill()
 				}
-				m.FlameFill()
 
 				for i := 127; i > int(((32 - minutesToGo) * 4)); i-- {
 					m.SetPixel(29, i, fuseColor)
