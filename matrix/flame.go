@@ -48,13 +48,11 @@ func (matrix *matrix) FlameFill() {
 	for r, row := range matrix.flame_buffer[0 : matrix.rows-1] {
 		value := 0
 		for c, _ := range row {
-			if y := (r + 1); y > matrix.rows {
+			if y := (r + 1); y < matrix.rows {
+				value = int(matrix.flame_buffer[y][c])
 				if x := (c - 1); x >= 0 {
-					value = int(matrix.flame_buffer[y][x])
+					value += int(matrix.flame_buffer[y][x])
 				}
-			}
-			if y := r + 1; y < matrix.rows {
-				value += int(matrix.flame_buffer[y][c])
 				if x := c + 1; x < matrix.columns {
 					value += int(matrix.flame_buffer[y][x])
 				}
