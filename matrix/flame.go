@@ -26,19 +26,39 @@ func (matrix *matrix) InitFlame() {
 	}
 }
 
-func (matrix *matrix) FlameFill() {
+func (matrix *matrix) FlameSet(r, c int) {
+	matrix.flame_buffer[r][c] = byte(rand.Float32() * 255.0)
+}
+
+func (matrix *matrix) FlameClear(r, c int) {
+	matrix.flame_buffer[r][c] = byte(0)
+}
+
+func (matrix *matrix) FlameSeed() {
 	// Seed the bottom row
 	for c, _ := range matrix.flame_buffer[matrix.rows-1] {
 		matrix.flame_buffer[matrix.rows-1][c] = byte(rand.Float32() * 255.0)
 	}
+}
 
-	for r, row := range matrix.flame_buffer {
+func (matrix *matrix) FlameFill() {
+	if len(matrix.flame_palette) == 0 {
+		matrix.InitFlame()
+	}
+	for r, row := range matrix.flame_buffer[0 : matrix.rows-1] {
+		value := 0
 		for c, _ := range row {
-			y := (r + 1) % matrix.rows
-			x := (c - 1 + matrix.columns) % matrix.columns
-			value := int(matrix.flame_buffer[y][x])
-			value += int(matrix.flame_buffer[(r+1)%matrix.rows][c])
-			value += int(matrix.flame_buffer[(r+1)%matrix.rows][(c+1)%matrix.columns])
+			if y := (r + 1); y > matrix.rows {
+				if x := (c - 1); x >= 0 {
+					value = int(matrix.flame_buffer[y][x])
+				}
+			}
+			if y := r + 1; y < matrix.rows {
+				value += int(matrix.flame_buffer[y][c])
+				if x := c + 1; x < matrix.columns {
+					value += int(matrix.flame_buffer[y][x])
+				}
+			}
 			value *= 40
 			value /= 129
 			matrix.flame_buffer[r][c] = byte(value)
