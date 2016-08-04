@@ -82,7 +82,7 @@ func main() {
 	delta, _ := time.ParseDuration("-15m")
 
 	// Lengths for the clocks
-	clockX := 127 - (8 * smallFont.Width)
+	clockX := 126 - (8 * smallFont.Width)
 	ttgLength := clockX - 5
 
 	// Trap SIGINT aka Ctrl-C
@@ -108,7 +108,7 @@ func main() {
 
 					// Calculate minutes till the event
 					minutesToGo = ev.Start_time.Sub(time.Now()).Minutes()
-					minutesToGo -= float64(int(minutesToGo)/32) * 32 // Debug
+					// minutesToGo -= float64(int(minutesToGo)/32) * 32 // Debug
 				} else {
 					// No event found
 					haveEvent = false
@@ -149,7 +149,7 @@ func main() {
 				}
 
 				// Clock
-				m.ScrollPlasma(clockBitmap, 16, clockX, step/5, 56)
+				m.ScrollPlasma(clockBitmap, 16, clockX, step/5, (smallFont.Width*8)+1)
 			} else {
 				// Schedule not loaded yet
 				m.Fill(errorColor)
