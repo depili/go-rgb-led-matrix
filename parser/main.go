@@ -56,6 +56,7 @@ func main() {
 	pastColor := [3]byte{217, 28, 227}   // pink-ish
 	futureColor := [3]byte{28, 227, 190} // Turquise-ish
 	fuseColor := [3]byte{74, 35, 17}     // dark brown
+	eventColor := [3]byte{128, 128, 128}
 
 	// Initial bitmaps
 	errorBitmap := font.TextBitmap("Schedule not imported yet.. waiting...  ")
@@ -139,7 +140,7 @@ func main() {
 				}
 
 				// Scroll the event name
-				m.Scroll(evBitmap, matrix.ColorWhite(), 0, 0, step/2, 128)
+				m.Scroll(evBitmap, eventColor, 0, 0, step/2, 128)
 
 				// T±12:04:05 output, set color based on ±
 				if inPast {

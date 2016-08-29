@@ -1,13 +1,15 @@
 package matrix
 
 import (
-	zmq "github.com/pebbe/zmq4"
-	"time"
+	// zmq "github.com/pebbe/zmq4"
+	"net"
+	// "time"
 )
 
 type matrix struct {
-	socket         *zmq.Socket
-	context        *zmq.Context
+	//socket         *zmq.Socket
+	//context        *zmq.Context
+	udp            net.Conn
 	bitmap         [][][3]byte
 	flame_buffer   [][]byte
 	flame_palette  [][3]byte
@@ -21,22 +23,29 @@ func Init(host string, rows int, columns int) *matrix {
 		rows:    rows,
 		columns: columns,
 	}
-	context, err := zmq.NewContext()
+	/*
+		context, err := zmq.NewContext()
+		if err != nil {
+			panic(err)
+		}
+		matrix.context = context
+		socket, err := matrix.context.NewSocket(zmq.PUSH)
+		if err != nil {
+			panic(err)
+		}
+		matrix.socket = socket
+		matrix.socket.SetLinger(1 * time.Second)
+		if err := matrix.socket.Connect(host); err != nil {
+			panic(err)
+		}
+	*/
+
+	con, err := net.Dial("udp", host)
 	if err != nil {
 		panic(err)
 	}
-	matrix.context = context
-	socket, err := matrix.context.NewSocket(zmq.PUSH)
-	if err != nil {
-		panic(err)
-	}
-	matrix.socket = socket
-	matrix.socket.SetImmediate(true)
-	matrix.socket.SetSndhwm(1)
-	matrix.socket.SetLinger(1 * time.Second)
-	if err := matrix.socket.Connect(host); err != nil {
-		panic(err)
-	}
+	matrix.udp = con
+
 	matrix.bitmap = make([][][3]byte, rows)
 	for r, _ := range matrix.bitmap {
 		matrix.bitmap[r] = make([][3]byte, columns)
@@ -52,7 +61,7 @@ func (matrix *matrix) Send() {
 			data = append(data, b[0], b[1], b[2])
 		}
 	}
-	if _, err := matrix.socket.SendBytes(data, 0); err != nil {
+	if _, err := matrix.udp.Write(data); err != nil {
 		panic(err)
 	}
 }
@@ -68,8 +77,9 @@ func (matrix *matrix) Fill(color [3]byte) {
 func (matrix *matrix) Close() {
 	matrix.Fill(ColorBlack())
 	matrix.Send()
-	matrix.socket.Close()
-	matrix.context.Term()
+	//matrix.socket.Close()
+	//matrix.context.Term()
+	matrix.udp.Close()
 }
 
 func (matrix *matrix) SetPixel(r int, c int, color [3]byte) {
