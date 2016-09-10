@@ -1,0 +1,18 @@
+config BR2_PACKAGE_CLOCK
+        bool "clock"
+        help
+          Led matrix clock
+	select BR2_PACKAGE_RPI_MATRIX
+	select BR2_PACKAGE_NTP
+	select BR2_PACKAGE_NTP_NTPD
+	select BR2_TARGET_TZ_INFO
+	select BR2_PACKAGE_TZDATA	
+
+if BR2_PACKAGE_CLOCK
+
+	config BR2_PACKAGE_CLOCK_CONFIG
+        	string "List of command line arguments"
+        	default "-m 127.0.0.1:9999 --serial-name=/dev/ttyUSB0 -r 255 -g 128"
+        	help
+          		Specify command line switches for the clock
+endif
