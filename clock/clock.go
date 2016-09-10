@@ -17,16 +17,19 @@ var Options struct {
 	Matrix     string `short:"m" long:"matrix" description:"Matrix to connect to" required:"true"`
 	SerialName string `long:"serial-name" value-name:"/dev/tty*"`
 	SerialBaud int    `long:"serial-baud" value-name:"BAUD" default:"57600"`
+	TextRed    int    `short:"r" long:"red" description:"Red component of text color" default:"128"`
+	TextGreen  int    `short:"g" long:"green" description:"Green component of text color" default:"128"`
+	TextBlue   int    `short:"b" long:"blue" description:"Blue component of text color" default:"0"`
 }
 
 var parser = flags.NewParser(&Options, flags.Default)
 
 func main() {
-	textColor := [3]byte{255, 0, 0} // red
-
 	if _, err := parser.Parse(); err != nil {
 		panic(err)
 	}
+
+	textColor := [3]byte{byte(Options.TextRed), byte(Options.TextGreen), byte(Options.TextBlue)}
 
 	serialConfig := serial.Config{
 		Name: Options.SerialName,
@@ -70,9 +73,10 @@ func main() {
 			m.Close()
 			os.Exit(1)
 		case <-updateTicker.C:
-			clockBitmap = font.TextBitmap(time.Now().Format("15:04"))
-			secondBitmap = smallFont.TextBitmap(time.Now().Format("05"))
-			seconds := time.Now().Second() + 1
+			t := time.Now()
+			clockBitmap = font.TextBitmap(t.Format("15:04"))
+			secondBitmap = smallFont.TextBitmap(t.Format("05"))
+			seconds := t.Second()
 			m.Fill(matrix.ColorBlack())
 			m.Scroll(clockBitmap, textColor, 10, 0, 0, 32)
 			m.Scroll(secondBitmap, textColor, 22, 10, 0, 12)
