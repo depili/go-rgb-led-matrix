@@ -12,7 +12,6 @@ import (
 )
 
 var Options struct {
-	SmallFont  string `short:"f" long:"smallfont" description:"Font for clock and countdown" default:"fonts/5x7.bdf"`
 	Font       string `short:"F" long:"font" description:"Font for event name" default:"fonts/6x12.bdf"`
 	Matrix     string `short:"m" long:"matrix" description:"Matrix to connect to" required:"true"`
 	SerialName string `long:"serial-name" value-name:"/dev/tty*"`
@@ -46,10 +45,6 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	smallFont, err := bdf.Parse(Options.SmallFont)
-	if err != nil {
-		panic(err)
-	}
 
 	fmt.Printf("Fonts loaded.\n")
 
@@ -61,7 +56,7 @@ func main() {
 	signal.Notify(sigChan, os.Interrupt)
 
 	clockBitmap := font.TextBitmap("15:04")
-	secondBitmap := smallFont.TextBitmap("05")
+	secondBitmap := font.TextBitmap("05")
 
 	updateTicker := time.NewTicker(time.Millisecond * 10)
 	send := make([]byte, 1)
@@ -75,11 +70,11 @@ func main() {
 		case <-updateTicker.C:
 			t := time.Now()
 			clockBitmap = font.TextBitmap(t.Format("15:04"))
-			secondBitmap = smallFont.TextBitmap(t.Format("05"))
+			secondBitmap = font.TextBitmap(t.Format("05"))
 			seconds := t.Second()
 			m.Fill(matrix.ColorBlack())
 			m.Scroll(clockBitmap, textColor, 10, 0, 0, 32)
-			m.Scroll(secondBitmap, textColor, 22, 10, 0, 12)
+			m.Scroll(secondBitmap, textColor, 20, 10, 0, 12)
 			send[0] = byte(seconds)
 			_, err := serial.Write(send)
 			if err != nil {
