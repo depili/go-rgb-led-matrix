@@ -5,6 +5,8 @@ import (
 	"github.com/depili/go-rgb-led-matrix/bdf"
 	"github.com/depili/go-rgb-led-matrix/matrix"
 	"github.com/jessevdk/go-flags"
+	"github.com/kidoman/embd"
+	_ "github.com/kidoman/embd/host/rpi" // This loads the RPi driver
 	"github.com/tarm/serial"
 	"os"
 	"os/signal"
@@ -12,13 +14,16 @@ import (
 )
 
 var Options struct {
-	Font       string `short:"F" long:"font" description:"Font for event name" default:"fonts/6x12.bdf"`
-	Matrix     string `short:"m" long:"matrix" description:"Matrix to connect to" required:"true"`
-	SerialName string `long:"serial-name" description:"Serial device for arduino" default:"/dev/ttyUSB0"`
-	SerialBaud int    `long:"serial-baud" value-name:"BAUD" default:"57600"`
-	TextRed    int    `short:"r" long:"red" description:"Red component of text color" default:"128"`
-	TextGreen  int    `short:"g" long:"green" description:"Green component of text color" default:"128"`
-	TextBlue   int    `short:"b" long:"blue" description:"Blue component of text color" default:"0"`
+	Font        string `short:"F" long:"font" description:"Font for event name" default:"fonts/6x12.bdf"`
+	Matrix      string `short:"m" long:"matrix" description:"Matrix to connect to" required:"true"`
+	SerialName  string `long:"serial-name" description:"Serial device for arduino" default:"/dev/ttyUSB0"`
+	SerialBaud  int    `long:"serial-baud" value-name:"BAUD" default:"57600"`
+	TextRed     int    `short:"r" long:"red" description:"Red component of text color" default:"128"`
+	TextGreen   int    `short:"g" long:"green" description:"Green component of text color" default:"128"`
+	TextBlue    int    `short:"b" long:"blue" description:"Blue component of text color" default:"0"`
+	LocalTime   string `short:"t" long:"local-time" description:"Local timezone" default:"Europe/Helsinki"`
+	ForeignTime string `short:"T" long:"foreign-time" description:"Foreign timezone" default:"Europe/Moscow"`
+	TimePin     int    `short:"p" long:"time-pin" description:"Pin to select foreign timezone, active low" default:"15"`
 }
 
 var parser = flags.NewParser(&Options, flags.Default)
@@ -40,6 +45,32 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
+
+	fmt.Printf("Serial open.\n")
+
+	if err := embd.InitGPIO(); err != nil {
+		panic(err)
+	}
+
+	timePin, err := embd.NewDigitalPin(Options.TimePin)
+	if err != nil {
+		panic(err)
+	} else if err := timePin.SetDirection(embd.In); err != nil {
+		panic(err)
+	}
+
+	fmt.Printf("GPIO initialized.\n")
+
+	local, err := time.LoadLocation(Options.LocalTime)
+	if err != nil {
+		panic(err)
+	}
+
+	foreign, err := time.LoadLocation(Options.ForeignTime)
+	if err != nil {
+		panic(err)
+	}
+	fmt.Printf("Timezones loaded.\n")
 
 	font, err := bdf.Parse(Options.Font)
 	if err != nil {
@@ -68,7 +99,14 @@ func main() {
 			m.Close()
 			os.Exit(1)
 		case <-updateTicker.C:
-			t := time.Now()
+			var t time.Time
+			if i, _ := timePin.Read(); err != nil {
+				panic(err)
+			} else if i == 1 {
+				t = time.Now().In(local)
+			} else {
+				t = time.Now().In(foreign)
+			}
 			clockBitmap = font.TextBitmap(t.Format("15:04"))
 			secondBitmap = font.TextBitmap(t.Format("05"))
 			seconds := t.Second()
