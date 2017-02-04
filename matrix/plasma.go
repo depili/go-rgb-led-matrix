@@ -10,7 +10,7 @@ func (matrix *matrix) PlasmaBitmap(step int) [][][3]byte {
 		var color [3]byte
 		matrix.plasma_palette = make([][3]byte, 360)
 		for i, _ := range matrix.plasma_palette {
-			r, g, b := husl.HuslToRGB(float64(i), 100, 50)
+			r, g, b := hsluv.HsluvToRGB(float64(i), 100, 50)
 			color[0] = byte(r * 255.0)
 			color[1] = byte(g * 255.0)
 			color[2] = byte(b * 255.0)
