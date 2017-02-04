@@ -86,7 +86,8 @@ func main() {
 	sigChan := make(chan os.Signal, 1)
 	signal.Notify(sigChan, os.Interrupt)
 
-	clockBitmap := font.TextBitmap("15:04")
+	hourBitmap := font.TextBitmap("15")
+	minuteBitmap := font.TextBitmap("04")
 	secondBitmap := font.TextBitmap("05")
 
 	updateTicker := time.NewTicker(time.Millisecond * 10)
@@ -107,12 +108,29 @@ func main() {
 			} else {
 				t = time.Now().In(foreign)
 			}
-			clockBitmap = font.TextBitmap(t.Format("15:04"))
-			secondBitmap = font.TextBitmap(t.Format("05"))
+			if t.Year() > 2000 {
+				hourBitmap = font.TextBitmap(t.Format("15"))
+				minuteBitmap = font.TextBitmap(t.Format("04"))
+				secondBitmap = font.TextBitmap(t.Format("05"))
+			} else {
+				hourBitmap = font.TextBitmap("XX")
+				minuteBitmap = font.TextBitmap("XX")
+				secondBitmap = font.TextBitmap("")
+			}
 			seconds := t.Second()
 			m.Fill(matrix.ColorBlack())
-			m.Scroll(clockBitmap, textColor, 10, 0, 0, 32)
-			m.Scroll(secondBitmap, textColor, 20, 10, 0, 12)
+			m.SetPixel(14, 15, textColor)
+			m.SetPixel(14, 16, textColor)
+			m.SetPixel(15, 15, textColor)
+			m.SetPixel(15, 16, textColor)
+
+			m.SetPixel(18, 15, textColor)
+			m.SetPixel(18, 16, textColor)
+			m.SetPixel(19, 15, textColor)
+			m.SetPixel(19, 16, textColor)
+			m.Scroll(hourBitmap, textColor, 10, 0, 0, 14)
+			m.Scroll(minuteBitmap, textColor, 10, 17, 0, 14)
+			m.Scroll(secondBitmap, textColor, 21, 8, 0, 14)
 			send[0] = byte(seconds)
 			_, err := serial.Write(send)
 			if err != nil {
